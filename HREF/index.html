@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5.60</title>
+    <title>HREF</title>
     <style>
         a{
             color: blue;
@@ -27,11 +27,11 @@
         }
 
         @media print{
-            a::before{
-                content: " ссылка ";
+            a[href^='https://']::before{
+                content: "(ссылка ";
             }
-            a::after{
-                content: " на ";
+            a[href^='https://']::after{
+                content: " на " attr(href) ")";
             }
         }
     </style>
