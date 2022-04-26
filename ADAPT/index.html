@@ -1,15 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BALL12</title>
+    <title>ADAPT</title>
+    <style>
+        .header {
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            background-color: #90caf9;
+            color: blue;
+        }
+
+        .container {
+            background: url(img/1.png) repeat-y,
+                url(img/ball.png) right top repeat-y
+        }
+
+        .menu {
+            background-color: #fff7ae;
+            width: 150px;
+            padding: 10px;
+            float: left
+        }
+
+        .content {
+            margin-left: 170px;
+            padding: 10px
+        }
+
+        .footer {
+            clear: both;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+            background-color: #90caf9;
+            color: blue;
+        }
+
+        @media all and (min-width: 1006px){
+            .menu{
+                width: 250px;
+                background: rgb(209, 169, 230);
+            }
+        }
+
+        @media all and (max-width:480px){
+            .menu{
+                width: 100%;
+                float: none;
+                box-sizing: border-box
+            }
+            .content{
+                float: none;
+                margin-left: 0px;
+            }
+            .container{
+                background: url(img/ball.png) right top repeat-y
+            }
+        }
+
+    </style>
 </head>
+
 <body>
-    <div style="background: url(img/blue.png) right top repeat-y,
-    url(img/center1.png) 15% repeat-y">
-        <div style="background-color: #fff7ae; width: 20%; padding: 10px; float: left;">
+    <div class="header"> ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!
+    </div>
+    <div class="container">
+        <div class="menu">
             <h4>Виды спорта:</h4>
             <ul>
                 <li>
@@ -57,14 +118,10 @@
                 </li>
             </ul>
         </div>
-        <div style="background-color: #3e4eda; width: 200px; padding: 10px; float: right">
-            <h3>CHAMPIONS LEAGUE</h3>
-            Liverpool:Villarreal <br>
-            Manchester City:Real Madrid
-        </div>
-        <div style="margin-left: 25%; margin-right: 210px; padding: 10px;">
+        <div class="content">
             <h3 style="text-align: center;">ФУТБОЛ</h3>
-           <p>Футбо́л (англ. football от foot «ступня» + ball «мяч») — командный вид спорта, в котором целью
+            <img src="img/meeting.png" alt="картинка" style="float: left; height: 100px; width: 150px; padding: 10px;">
+            <p>Футбо́л (англ. football от foot «ступня» + ball «мяч») — командный вид спорта, в котором целью
                 является забить мяч в ворота соперника ногами или другими частями тела (кроме рук) большее
                 количество раз, чем команда соперника. В настоящее время самый популярный и массовый вид спорта в
                 мире.</p>
@@ -74,8 +131,7 @@
                 футбольных ассоциаций. Последняя редакция официальных футбольных правил датирована 1 июня 2013 года
                 и состоит из 17 правил.</p>
         </div>
-        <div style="clear: both; height: 0px;">
+        <div class="footer">
+            ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!
         </div>
     </div>
-</body>
-</html>
