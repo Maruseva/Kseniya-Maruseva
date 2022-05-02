@@ -1,0 +1,156 @@
+.container {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    height: 85px;
+}
+
+.header .logo {
+float: left;
+}
+
+.header .logo img:first-child {
+    margin-left: 67px;
+    margin-top: 22px;
+    padding-bottom: 6px;
+}
+
+.header .logo img:last-child {
+    margin-top: 14px;
+}
+
+.header button {
+    border: 1px solid #3A85F4;
+box-sizing: border-box;
+border-radius: 123px;
+width: 195px;
+height: 36px;
+background-color: white;
+margin-top: 24px;
+margin-left: 369px;
+
+font-family: 'Graphik LCG';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 14px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+
+color: #3A85F4;
+}
+
+.header ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 27px;
+}
+
+.header ul li {
+    float: left;
+    margin-right: 40px;
+}
+
+.header ul li:last-child {
+    padding-top: 4px;
+    margin-right: 61px;
+}
+
+.baner {
+    height: 443px;
+    padding-top: 97px;
+    padding-left: 127px;
+    padding-right: 467px;
+    background: url(img/bg_people.svg) right center no-repeat,
+    url(img/bg_color.svg) no-repeat
+}
+
+.baner h1 {
+    font-family: 'Graphik LCG';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 105.5%;
+/* or 32px */
+color: #2F2F2F;
+margin-bottom: 28px;
+}
+
+.baner p {
+    font-family: 'Graphik LCG';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 124%;
+/* or 17px */
+color: #2F2F2F;
+margin-bottom: 28px;
+}
+
+.baner button {
+    width: 191px;
+    height: 42px;
+    border: none;
+    background: #3A85F4;
+border-radius: 123px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 15px;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.icon {
+    background-color: rgb(249 251 255);
+    margin-top: -32px;
+}
+
+.icon ul {
+    list-style-type: none;
+    margin-left: 157px;
+    padding-left: 0px;
+}
+
+.icon ul li {
+    float: left;
+   width: 170px;
+   margin-right: 25px;
+}
+
+.icon ul li::after {
+    content: url(img/arrow.svg);
+}
+.icon ul li:last-child:after {
+    content: " ";
+}
+
+.icon ul li span {
+    display: block;
+    font-family: 'Graphik LCG';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 14px;
+/* identical to box height */
+
+text-align: center;
+
+color: #2F2F2F;
+}
+
+.icon ul li img {
+    width: 121px;
+    height: 121px;
+    padding-left: 20px;
+}
