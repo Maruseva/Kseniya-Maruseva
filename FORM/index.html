@@ -7,34 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORM</title>
     <style>
-        
-        input:first-of-type, textarea {
-            width: 100%;
+        textarea {
+            width: 99%;
         }
 
-    
+        .a {
+            width: 69%;
+        }
+
+        label {
+            width: 30%;
+            float: left;
+        }
+
+        div {
+            display: inline;
+        }
+
+        @media all and (max-width: 825px) {
+
+            label,
+            .a {
+                width: 99%;
+            }
+
+            label:last-of-type {
+                float: none;
+            }
+        }
+
+        @media all and (max-width: 385px) {
+            div {
+                float: left;
+                width: 100%;
+                display: block;
+            }
+
+            select {
+                width: 100%;
+            }
+
+        }
     </style>
 </head>
 
 <body>
     <form action="http://fe.it-academy.by/TestForm.php" method="post">
         Для публикации вашей статьи заполните, пожалуйста, следующую форму: <br><br>
-        Название статьи:
-        <input type="text" name="title"><br>
-        Рубрика:
-        <select name="heading">
+        <label for="title">Название статьи:</label>
+        <input class="a" type="text" name="title" id="title"><br>
+        <label for="heading">Рубрика:</label>
+        <select name="heading" id="heading">
             <option value="1">программирование</option>
             <option value="2">финансы</option>
             <option value="3">природопользование</option>
             <option value="4">машиностроение</option>
             <option value="5">литература</option>
         </select><br>
-        Публикация:
-        <input type="radio" name="publication" value="1">на сайте
-        <input type="radio" name="publication" value="2">в журнале
-        <input type="radio" name="publication" value="3">на сайте и в журнале <br>
-        Разрешить комментарии:
-        <input type="checkbox" value="commtnt" checked><br>
+        <label for="publication">Публикация:</label>
+        <div>
+            <input type="radio" name="publication" value="1" id="publication"><span>на сайте</span>
+        </div>
+        <div> 
+            <input type="radio" name="publication" value="2"><span>в журнале</span>
+        </div>
+        <div> 
+            <input type="radio" name="publication" value="3"><span>на сайте и в журнале</span><br>
+        </div>
+        <label for="comment">Разрешить комментарии:</label>
+        <input type="checkbox" value="comment" checked id="comment"><br>
         Текст статьи: <br>
         <textarea name="article"></textarea> <br>
         <input type="submit" value="Опубликовать">
