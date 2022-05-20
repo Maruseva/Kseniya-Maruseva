@@ -11,11 +11,9 @@
 
     <style>
         
-        .header {
+        .container {
             display: flex;
             align-items: flex-end;
-            box-sizing: border-box;
-            padding-top: 30px;
             background: radial-gradient(circle at 1% bottom, rgba(0,0,0,0), grey);
             background-color: rgb(228, 241, 197);
             transition-duration: 2s;
@@ -24,14 +22,14 @@
             width: 250px;
             margin-left: 10px;
         }
-        .header:hover  {
+        .container:hover  {
              background-color: yellow;
         }   
-        .header:hover img{
+        .container:hover img{
             filter: hue-rotate(594deg);
             order: 1;
         }  
-        .header:hover .text {
+        .container:hover .text {
             font-family: 'BIZ UDPGothic', sans-serif;
             order: 2;
         }
@@ -40,7 +38,7 @@
             height: 320px;
             animation: Man 1s steps(4) infinite;
         }
-        .header:hover #anim {
+        .container:hover #anim {
             order: 3;
         }
         @keyframes Man {
@@ -50,7 +48,7 @@
     </style>
 </head>
 <body>
-    <div class="header">
+    <div class="container">
         <div class="text">Хризанте́ма (лат. Chrysánthemum, от др.-греч. χρῡσανθής, «златоцветный», от χρυσός — «золотой» и ἄνθος — «цветок»; объясняется жёлтой окраской соцветий) — род однолетних и многолетних травянистых растений семейства Астровые, или Сложноцветные (Asteraceae), близкий к родам Тысячелистник и Пижма, куда нередко перемещаются многие виды хризантем.Род включает 42 вида, произрастающих в умеренной и северной зонах земного шара, преимущественно в Азии.</div>
         <img src="img/flower.png" alt="flower">
          <div id="anim"></div>
