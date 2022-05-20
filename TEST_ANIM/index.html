@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap" rel="stylesheet">
+    <title>TEST_ANIM</title>
+
+    <style>
+        
+        .header {
+            display: flex;
+            align-items: flex-end;
+            box-sizing: border-box;
+            padding-top: 30px;
+            background: radial-gradient(circle at 1% bottom, rgba(0,0,0,0), grey);
+            background-color: rgb(228, 241, 197);
+            transition-duration: 2s;
+        }
+        .text {
+            width: 250px;
+            margin-left: 10px;
+        }
+        .header:hover  {
+             background-color: yellow;
+        }   
+        .header:hover img{
+            filter: hue-rotate(594deg);
+            order: 1;
+        }  
+        .header:hover .text {
+            font-family: 'BIZ UDPGothic', sans-serif;
+            order: 2;
+        }
+        #anim {
+            width: 175px;
+            height: 320px;
+            animation: Man 1s steps(4) infinite;
+        }
+        .header:hover #anim {
+            order: 3;
+        }
+        @keyframes Man {
+            from { background: url(img/man.png) 0 0;}
+            to  { background: url(img/man.png) -725px 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="text">Хризанте́ма (лат. Chrysánthemum, от др.-греч. χρῡσανθής, «златоцветный», от χρυσός — «золотой» и ἄνθος — «цветок»; объясняется жёлтой окраской соцветий) — род однолетних и многолетних травянистых растений семейства Астровые, или Сложноцветные (Asteraceae), близкий к родам Тысячелистник и Пижма, куда нередко перемещаются многие виды хризантем.Род включает 42 вида, произрастающих в умеренной и северной зонах земного шара, преимущественно в Азии.</div>
+        <img src="img/flower.png" alt="flower">
+         <div id="anim"></div>
+    </div>
+        
+</body>
+</html>
