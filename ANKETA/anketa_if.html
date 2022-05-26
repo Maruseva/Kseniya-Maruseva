@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var lastname = prompt("Введите вашу фамилию");
+      var firstname = prompt("Введите ваше имя");
+      var patronymic = prompt("Введите ваше отчество");
+      var age = prompt("Введите ваш возраст в годах");
+      var man = confirm("Ваш пол - мужской?");
+      var agedays = parseFloat(age) * 365;
+      var age5years = parseFloat(age) + 5;
+      var gender;
+      if (man == true) {
+        gender = "мужской";
+      } else {
+        gender = "женский";
+      }
+      var pension;
+      if (man == true && age > 62) {
+        pension = "да";
+      } else {
+        if (man == false && age > 57) {
+          pension = "да";
+        } else {
+        pension = "нет";
+        }
+      }
+      alert(
+        "Ваше ФИО: " +
+          lastname +
+          " " +
+          firstname +
+          " " +
+          patronymic +
+          "\n" +
+          "Ваш возраст в годах: " +
+          age +
+          "\n" +
+          "Ваш возраст в днях: " +
+          agedays +
+          "\n" +
+          "Через 5 лет вам будет: " +
+          age5years +
+          "\n" +
+          "Ваш пол: " +
+          gender +
+          "\n" +
+          "Вы на пенсии: " +
+          pension
+      );
+    </script>
+  </body>
+</html>
