@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        var lastname = prompt("Введите вашу фамилию");
-        var firstname = prompt("Введите ваше имя");
-        var patronymic = prompt("Введите ваше отчество");
-        var ageStr = prompt("Введите ваш возраст в годах");
-        var man = confirm("Ваш пол - мужской?");
-        var age = parseInt(ageStr);
-        var ageDays = age * 365;
-        var age5years = age + 5;
-        var gender = (man == true)?"мужской":"женский";
-        var pension = ((man == true && age > 62) || (man == false && age > 57))?"да":"нет";
-        var sucsses = "Ваше ФИО: " +
-            lastname +
-            " " +
-            firstname +
-            " " +
-            patronymic +
-            "\n" +
-            "Ваш возраст в годах: " +
-            age +
-            "\n" +
-            "Ваш возраст в днях: " +
-            ageDays +
-            "\n" +
-            "Через 5 лет вам будет: " +
-            age5years +
-            "\n" +
-            "Ваш пол: " +
-            gender +
-            "\n" +
-            "Вы на пенсии: " +
-            pension;
-        var result = (!lastname || !firstname || !patronymic || isNaN(age))?'Необходимо ввести корректные данные':sucsses
-        alert(result)
-      </script>
-</body>
+      var lastname = prompt("Введите вашу фамилию");
+      var firstname = prompt("Введите ваше имя");
+      var patronymic = prompt("Введите ваше отчество");
+      var ageStr = prompt("Введите ваш возраст в годах");
+      var man = confirm("Ваш пол - мужской?");
+      var age = parseInt(ageStr);
+      var ageDays = age * 365;
+      var age5years = age + 5;
+      var gender = man == true ? "мужской" : "женский";
+      var pension =
+        (man == true && age > 62) || (man == false && age > 57) ? "да" : "нет";
+      var sucsses =
+        "Ваше ФИО: " +
+        lastname +
+        " " +
+        firstname +
+        " " +
+        patronymic +
+        "\n" +
+        "Ваш возраст в годах: " +
+        age +
+        "\n" +
+        "Ваш возраст в днях: " +
+        ageDays +
+        "\n" +
+        "Через 5 лет вам будет: " +
+        age5years +
+        "\n" +
+        "Ваш пол: " +
+        gender +
+        "\n" +
+        "Вы на пенсии: " +
+        pension;
+      var result =
+        !lastname || !firstname || !patronymic || isNaN(age)
+          ? "Необходимо ввести корректные данные"
+          : sucsses;
+      alert(result);
+    </script>
+  </body>
 </html>
