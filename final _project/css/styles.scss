@@ -9,5 +9,55 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $fs16;
+    color: $grey;
 
+    a {
+        text-decoration: none;
+    }
+}
+
+.container {
+    width: $xl;
+    margin: 0 auto;
+}
+
+//header
+
+.header {
+    background: $black;
+    color: $white;
+    
+    .container {
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            height: 29px;
+        }
+
+        .consultation {
+            display: flex;
+            align-items: center;
+            p {
+                font-size: $fs18;
+                line-height: 22px;
+            }
+            a {
+                line-height: 160%;
+                color: $red;
+                margin-left: 20px;
+            }
+        }
+
+        nav a {
+            line-height: 160%;
+            color: $white;
+            margin-left: 30px;
+        }
+    }
 }

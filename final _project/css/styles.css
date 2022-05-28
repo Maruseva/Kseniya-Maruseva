@@ -5,6 +5,41 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #8A8A8A; }
+  body a {
+    text-decoration: none; }
+
+.container {
+  width: 1220px;
+  margin: 0 auto; }
+
+.header {
+  background: #1B1B1B;
+  color: #FFFFFF; }
+  .header .container {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header .container img {
+      height: 29px; }
+    .header .container .consultation {
+      display: flex;
+      align-items: center; }
+      .header .container .consultation p {
+        font-size: 18px;
+        line-height: 22px; }
+      .header .container .consultation a {
+        line-height: 160%;
+        color: #DA4533;
+        margin-left: 20px; }
+    .header .container nav a {
+      line-height: 160%;
+      color: #FFFFFF;
+      margin-left: 30px; }
 
 /*# sourceMappingURL=styles.css.map */
