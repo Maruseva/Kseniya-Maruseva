@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=STIX+Two+Text:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=STIX+Two+Text:ital,wght@0,400;0,500;1,500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,13 +9,57 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  line-height: 160%;
   color: #8A8A8A; }
-  body a {
-    text-decoration: none; }
 
 .container {
   width: 1220px;
   margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+
+h2 {
+  font-family: 'STIX Two Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 135%;
+  color: #FFFFFF;
+  margin-bottom: 16px; }
+
+.btn_big {
+  width: 299px;
+  height: 91px;
+  border: none;
+  background: #DA4533;
+  color: #FFFFFF;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  border-radius: 50%;
+  margin-right: 42px; }
+
+.btn_small {
+  width: 135px;
+  height: 41px;
+  border: solid 1px #DA4533;
+  background: #1B1B1B;
+  color: #DA4533;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  border-radius: 50%;
+  position: relative; }
+
+.btn_small::after {
+  content: url("../img/arrow.svg");
+  position: absolute;
+  right: -17px; }
 
 header {
   background: #1B1B1B;
@@ -34,40 +78,111 @@ header {
         font-size: 18px;
         line-height: 22px; }
       header .container .consultation a {
-        line-height: 160%;
         color: #DA4533;
         margin-left: 20px; }
     header .container nav a {
-      line-height: 160%;
       color: #FFFFFF;
       margin-left: 30px; }
 
 .wrap {
-  background: #1B1B1B;
-  height: 2166px; }
+  background: #1B1B1B; }
   .wrap .container .head_page {
     display: flex;
     justify-content: space-between; }
-    .wrap .container .head_page .title p {
-      line-height: 160%;
-      margin-bottom: 8px; }
-    .wrap .container .head_page .title p:last-child {
-      font-weight: 400;
-      font-size: 18px; }
-    .wrap .container .head_page .title h1 {
-      font-family: 'STIX Two Text';
-      font-size: 55px;
-      line-height: 135%;
-      color: #FFFFFF;
-      margin-bottom: 16px; }
-    .wrap .container .head_page .title h1::after {
-      content: url(../img/quotes2.svg); }
-    .wrap .container .head_page .title h1::before {
-      content: url(../img/quotes1.svg); }
-    .wrap .container .head_page .head_page_img img:first-child {
-      height: 513px; }
-    .wrap .container .head_page .head_page_img img:last-child {
-      height: 323px;
-      opacity: 0.1; }
+    .wrap .container .head_page .title {
+      margin-top: 109px; }
+      .wrap .container .head_page .title p {
+        line-height: 160%;
+        margin-bottom: 8px; }
+      .wrap .container .head_page .title p:last-child {
+        font-weight: 400;
+        font-size: 18px; }
+      .wrap .container .head_page .title h1 {
+        font-family: 'STIX Two Text';
+        font-size: 55px;
+        line-height: 135%;
+        color: #FFFFFF;
+        margin-bottom: 16px; }
+        .wrap .container .head_page .title h1 span {
+          font-style: italic; }
+      .wrap .container .head_page .title h1::after {
+        content: url("../img/quotes2.svg");
+        position: relative;
+        top: -27px; }
+      .wrap .container .head_page .title h1::before {
+        content: url("../img/quotes1.svg");
+        position: relative;
+        top: -27px; }
+      .wrap .container .head_page .title .btn {
+        display: flex;
+        align-items: center;
+        margin-top: 40px; }
+    .wrap .container .head_page .head_page_img {
+      position: relative; }
+      .wrap .container .head_page .head_page_img img:first-child {
+        height: 280px;
+        opacity: 0.1;
+        position: absolute;
+        bottom: 121px;
+        right: 28px; }
+      .wrap .container .head_page .head_page_img img:last-child {
+        height: 513px;
+        filter: drop-shadow(-60px 60px 12px rgba(0, 0, 0, 0.2)); }
+  .wrap .container .contant {
+    display: flex;
+    margin-top: 206px; }
+    .wrap .container .contant .contant_img {
+      position: relative; }
+      .wrap .container .contant .contant_img img:first-child {
+        height: 344px;
+        opacity: 0.1;
+        position: absolute;
+        top: 66px;
+        right: 7px; }
+      .wrap .container .contant .contant_img img:last-child {
+        height: 356px;
+        filter: drop-shadow(-60px 60px 12px rgba(0, 0, 0, 0.2)); }
+    .wrap .container .contant .inner {
+      padding-left: 48px; }
+      .wrap .container .contant .inner .about {
+        margin-bottom: 100px; }
+        .wrap .container .contant .inner .about .info {
+          margin-top: 40px;
+          height: 471px;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap; }
+          .wrap .container .contant .inner .about .info .box {
+            width: 392px;
+            height: 137px;
+            background: #202020;
+            box-shadow: -1px -1px 0px 0px #DA4533;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px; }
+            .wrap .container .contant .inner .about .info .box p {
+              font-weight: 400; }
+              .wrap .container .contant .inner .about .info .box p span {
+                font-family: 'STIX Two Text';
+                font-size: 36px;
+                line-height: 45px;
+                color: #FFFFFF; }
+      .wrap .container .contant .inner .partners {
+        margin-bottom: 160px; }
+        .wrap .container .contant .inner .partners .partners_logo {
+          height: 417px;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          margin-top: 50px; }
+          .wrap .container .contant .inner .partners .partners_logo .logo {
+            width: 392px;
+            height: 119px;
+            background: #202020;
+            border-radius: 8px;
+            margin: 10px;
+            text-align: center; }
+            .wrap .container .contant .inner .partners .partners_logo .logo img {
+              opacity: 0.7; }
 
 /*# sourceMappingURL=styles.css.map */

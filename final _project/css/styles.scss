@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=STIX+Two+Text:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=STIX+Two+Text:ital,wght@0,400;0,500;1,500&display=swap');
 @import "viriables";
 
 * {
@@ -12,16 +12,63 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: $fs16;
+    line-height: 160%;
     color: $grey;
-
-    a {
-        text-decoration: none;
-    }
 }
 
 .container {
     width: $xl;
     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'STIX Two Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $fs38;
+    line-height: 135%;
+    color: $white;
+    margin-bottom: 16px;
+}
+
+.btn_big {
+    width: 299px;
+    height: 91px;
+    border: none;
+    background: $red;
+    color: $white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: $fs16;
+    line-height: 160%;
+    border-radius: 50%;
+    margin-right: 42px;
+}
+
+.btn_small {
+    width: 135px;
+    height: 41px;
+    border: solid 1px $red;
+    background: $black;
+    color: $red;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: $fs16;
+    line-height: 160%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.btn_small::after {
+    content: url($imagepath + 'arrow.svg');
+    position: absolute;
+    right: -17px;
 }
 
 //header
@@ -48,14 +95,12 @@ header {
                 line-height: 22px;
             }
             a {
-                line-height: 160%;
                 color: $red;
                 margin-left: 20px;
             }
         }
 
         nav a {
-            line-height: 160%;
             color: $white;
             margin-left: 30px;
         }
@@ -66,7 +111,6 @@ header {
 
 .wrap {
     background: $black;
-    height: 2166px;
 
     .container {
         
@@ -75,43 +119,148 @@ header {
             justify-content: space-between;
 
             .title {
-                p {
+                margin-top: 109px;
+
+                & p {
                     line-height: 160%;
                     margin-bottom: 8px;
                 }
 
-                p:last-child {
+                & p:last-child {
                     font-weight: 400;
                     font-size: $fs18;
                 }
 
-                h1 {
+                & h1 {
                     font-family: 'STIX Two Text';
                     font-size: $fs55;
                     line-height: 135%;
                     color: $white;
                     margin-bottom: 16px;
+
+                    & span {
+                        font-style: italic;
+                    }
                 }
-                h1::after {
-                    content: url(../img/quotes2.svg);
+                & h1::after {
+                    content: url($imagepath + 'quotes2.svg');
+                    position: relative;
+                    top: -27px;
                 }
-                h1::before {
-                    content: url(../img/quotes1.svg);
+                & h1::before {
+                    content: url($imagepath + 'quotes1.svg');
+                    position: relative;
+                    top: -27px;
                 }
 
-                .btn {}
+                .btn {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 40px;
+                }
             }
 
             .head_page_img {
-                img:first-child {
-                    height: 513px;
+                position: relative;
+
+                & img:first-child {
+                    height: 280px;
+                    opacity: 0.1;
+                    position: absolute;
+                    bottom: 121px;
+                    right: 28px;
                 }
 
-                img:last-child {
-                    height: 323px;
+                & img:last-child {
+                    height: 513px;
+                    filter: drop-shadow(-60px 60px 12px rgba(0, 0, 0, 0.2))
+                }
+            }
+        }
+
+        .contant {
+            display: flex;
+            margin-top: 206px;
+        
+            .contant_img {
+                position: relative;
+        
+                & img:first-child {
+                    height: 344px;
                     opacity: 0.1;
+                    position: absolute;
+                    top: 66px;
+                    right: 7px;
+                }
+        
+                & img:last-child {
+                    height: 356px;
+                    filter: drop-shadow(-60px 60px 12px rgba(0, 0, 0, 0.2));
+                }
+            }
+
+            .inner {
+                padding-left: 48px;
+
+                .about {
+                    margin-bottom: 100px;
+
+                    .info {
+                        margin-top: 40px;
+                        height: 471px;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+
+                        .box {
+                            width: 392px;
+                            height: 137px;
+                            background: $bgd_box;
+                            box-shadow: -1px -1px 0px 0px $red;
+                            border-radius: 8px;
+                            margin: 10px;
+                            padding: 20px;
+
+                            & p {
+                                font-weight: 400;
+
+                                & span {
+                                    font-family: 'STIX Two Text';
+                                    font-size: $fs36;
+                                    line-height: 45px;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    } 
+                }
+
+                .partners {
+                    margin-bottom: 160px;
+
+                    .partners_logo {
+                        height: 417px;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        margin-top: 50px;
+
+                        .logo {
+                            width: 392px;
+                            height: 119px;
+                            background: $bgd_box;
+                            border-radius: 8px;
+                            margin: 10px;
+                            text-align: center;
+
+                            & img {
+                                opacity: 0.7;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
 }
+
