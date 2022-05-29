@@ -26,7 +26,7 @@ body {
 
 //header
 
-.header {
+header {
     background: $black;
     color: $white;
     
@@ -58,6 +58,60 @@ body {
             line-height: 160%;
             color: $white;
             margin-left: 30px;
+        }
+    }
+}
+
+//section wrap
+
+.wrap {
+    background: $black;
+    height: 2166px;
+
+    .container {
+        
+        .head_page {
+            display: flex;
+            justify-content: space-between;
+
+            .title {
+                p {
+                    line-height: 160%;
+                    margin-bottom: 8px;
+                }
+
+                p:last-child {
+                    font-weight: 400;
+                    font-size: $fs18;
+                }
+
+                h1 {
+                    font-family: 'STIX Two Text';
+                    font-size: $fs55;
+                    line-height: 135%;
+                    color: $white;
+                    margin-bottom: 16px;
+                }
+                h1::after {
+                    content: url(../img/quotes2.svg);
+                }
+                h1::before {
+                    content: url(../img/quotes1.svg);
+                }
+
+                .btn {}
+            }
+
+            .head_page_img {
+                img:first-child {
+                    height: 513px;
+                }
+
+                img:last-child {
+                    height: 323px;
+                    opacity: 0.1;
+                }
+            }
         }
     }
 }

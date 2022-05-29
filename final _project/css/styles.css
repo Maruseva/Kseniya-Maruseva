@@ -17,29 +17,57 @@ body {
   width: 1220px;
   margin: 0 auto; }
 
-.header {
+header {
   background: #1B1B1B;
   color: #FFFFFF; }
-  .header .container {
+  header .container {
     height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .header .container img {
+    header .container img {
       height: 29px; }
-    .header .container .consultation {
+    header .container .consultation {
       display: flex;
       align-items: center; }
-      .header .container .consultation p {
+      header .container .consultation p {
         font-size: 18px;
         line-height: 22px; }
-      .header .container .consultation a {
+      header .container .consultation a {
         line-height: 160%;
         color: #DA4533;
         margin-left: 20px; }
-    .header .container nav a {
+    header .container nav a {
       line-height: 160%;
       color: #FFFFFF;
       margin-left: 30px; }
+
+.wrap {
+  background: #1B1B1B;
+  height: 2166px; }
+  .wrap .container .head_page {
+    display: flex;
+    justify-content: space-between; }
+    .wrap .container .head_page .title p {
+      line-height: 160%;
+      margin-bottom: 8px; }
+    .wrap .container .head_page .title p:last-child {
+      font-weight: 400;
+      font-size: 18px; }
+    .wrap .container .head_page .title h1 {
+      font-family: 'STIX Two Text';
+      font-size: 55px;
+      line-height: 135%;
+      color: #FFFFFF;
+      margin-bottom: 16px; }
+    .wrap .container .head_page .title h1::after {
+      content: url(../img/quotes2.svg); }
+    .wrap .container .head_page .title h1::before {
+      content: url(../img/quotes1.svg); }
+    .wrap .container .head_page .head_page_img img:first-child {
+      height: 513px; }
+    .wrap .container .head_page .head_page_img img:last-child {
+      height: 323px;
+      opacity: 0.1; }
 
 /*# sourceMappingURL=styles.css.map */
