@@ -248,10 +248,12 @@ header {
                         .logo {
                             width: 392px;
                             height: 119px;
+                            line-height: 119px;
                             background: $bgd_box;
                             border-radius: 8px;
                             margin: 10px;
-                            text-align: center;
+                            display: flex;
+                            justify-content: center;
 
                             & img {
                                 opacity: 0.7;
@@ -259,6 +261,87 @@ header {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+// section services
+
+.services {
+    background: url($imagepath + 'bgd_grey_small.png');
+    background-size: cover;
+
+    .container {
+        padding: 160px 0 165px;
+
+        & h2 {
+            color: $black;
+        }
+
+        .services_text {
+            display: flex;
+            justify-content: space-between;
+
+            .btn_small {
+                background: none;
+            }
+        }
+
+        .services_items {
+            display: flex;
+            margin: 40px auto 25px;
+
+            .item {
+                width: 289px;
+                height: 400px;
+                background: $black;
+                border-radius: 3%;
+                margin: 10px;
+                padding: 20px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+
+                .arrow {
+                    position: relative;
+                    left: 232px;
+
+                    & img:first-child {
+                        position: absolute;
+                    }
+                }
+
+                .services_img {
+                    display: block;
+                    width: 160px;
+                    margin: 38px auto 0;
+                }
+
+                .link {
+                    align-items: flex-end;
+
+                    & h3 {
+                        font-size: $fs18;
+                    }
+    
+                    & p {
+                        font-weight: 400;
+                        font-size: $fs;
+                        line-height: 165%;
+                        display: none;
+                    }
+                }
+            }
+
+            .item:hover {
+                & img:first-child {
+                    z-index: -1;}
+                p {
+                    display: inline;
+                    
+                }
+
             }
         }
     }
