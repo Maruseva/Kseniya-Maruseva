@@ -191,7 +191,7 @@ header {
   background: url("../img/bgd_grey_small.png");
   background-size: cover; }
   .services .container {
-    padding: 160px 0 165px; }
+    padding: 160px 0 155px; }
     .services .container h2 {
       color: #1B1B1B; }
     .services .container .services_text {
@@ -201,7 +201,7 @@ header {
         background: none; }
     .services .container .services_items {
       display: flex;
-      margin: 40px auto 25px; }
+      margin: 40px auto 15px; }
       .services .container .services_items .item {
         width: 289px;
         height: 400px;
@@ -222,8 +222,8 @@ header {
           width: 160px;
           margin: 38px auto 0; }
         .services .container .services_items .item .link {
-          align-items: flex-end; }
-          .services .container .services_items .item .link h3 {
+          margin-top: auto; }
+          .services .container .services_items .item .link h4 {
             font-size: 18px; }
           .services .container .services_items .item .link p {
             font-weight: 400;
@@ -232,7 +232,34 @@ header {
             display: none; }
       .services .container .services_items .item:hover img:first-child {
         z-index: -1; }
+      .services .container .services_items .item:hover .services_img {
+        width: 130px; }
+      .services .container .services_items .item:hover h4 {
+        color: #FFFFFF; }
       .services .container .services_items .item:hover p {
         display: inline; }
+    .services .container .services_sliders {
+      text-align: center; }
+      .services .container .services_sliders img {
+        margin: 10px; }
+
+.quiz {
+  background: url("../img/bgd_red_big.png");
+  background-size: cover; }
+  .quiz .container {
+    padding: 160px 0 150px; }
+    .quiz .container p {
+      color: #FFFFFF;
+      opacity: 0.75; }
+    .quiz .container h3 {
+      color: #FFFFFF;
+      font-size: 24px; }
+    .quiz .container .questions {
+      background: #1B1B1B;
+      margin: 50px 0;
+      width: fit-content; }
+      .quiz .container .questions .questions_title {
+        display: flex;
+        justify-content: space-between; }
 
 /*# sourceMappingURL=styles.css.map */

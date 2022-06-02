@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTRIES</title>
+</head>
+<body>
+
+    <input type="button" value="ввод информации о стране" onclick="add()">
+    <input type="button" value="получение информации о стране" onclick="question()">
+    <input type="button" value="перечень всех стран" onclick="allCountries()">
+    <input type="button" value="удаление информации о стране" onclick="del()">
+
+    <script>
+        var countries = { Belarus:'Minsk', Poland:'Warsaw', Lithuania:'Vilnus' };
+
+        
+       function add() {
+            var country = prompt ('Введите название страны');
+            var capital = prompt ('Введите название ее столицы');
+            countries[country] = capital;
+            console.log (countries);
+        }
+
+        function question() {
+            var country = prompt ('Введите название страны');
+            if (country in countries) {
+                alert (countries[country])
+            } else {
+                alert ('нет информации о стране')
+            }
+        }
+
+        function allCountries () {
+            for (var k in countries)
+            console.log (k + ": " + countries[k])
+        }
+
+        function del() {
+            var country = prompt ('Введите название страны');
+            delete countries[country];
+            console.log (countries);
+            }
+
+
+
+    </script>
+    
+</body>
+</html>

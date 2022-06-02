@@ -273,7 +273,7 @@ header {
     background-size: cover;
 
     .container {
-        padding: 160px 0 165px;
+        padding: 160px 0 155px;
 
         & h2 {
             color: $black;
@@ -290,7 +290,7 @@ header {
 
         .services_items {
             display: flex;
-            margin: 40px auto 25px;
+            margin: 40px auto 15px;
 
             .item {
                 width: 289px;
@@ -319,9 +319,9 @@ header {
                 }
 
                 .link {
-                    align-items: flex-end;
-
-                    & h3 {
+                    margin-top: auto;
+                
+                    & h4 {
                         font-size: $fs18;
                     }
     
@@ -336,14 +336,65 @@ header {
 
             .item:hover {
                 & img:first-child {
-                    z-index: -1;}
-                p {
+                    z-index: -1;
+                }
+
+                .services_img {
+                    width: 130px;
+                }    
+
+                & h4 {
+                    color: $white;
+                }
+                & p {
                     display: inline;
-                    
                 }
 
             }
         }
+
+        .services_sliders {
+            text-align: center;
+
+            & img {
+                margin: 10px;
+            }
+            
+        }
     }
+}
+
+// section quiz
+
+.quiz {
+    background: url($imagepath + 'bgd_red_big.png');
+    background-size: cover;
+
+    .container {
+        padding: 160px 0 150px;
+
+        & p {
+            color: $white;
+            opacity: 0.75;
+        }
+
+        & h3 {
+            color: $white;
+            font-size: $fs24;
+        }
+
+        .questions {
+            background: $black;
+            margin: 50px 0;
+            width: fit-content;
+            
+
+            .questions_title {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
 }
 
