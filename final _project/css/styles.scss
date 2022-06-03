@@ -490,11 +490,11 @@ header {
         }
 
         .case_wrap {
-            margin: 40px 0 15px;
+            margin: 50px 0 25px;
             display: flex;
+            justify-content: space-between;
 
             .case_item {
-                margin: 10px;
                 width: 598px;
                 height: 289px;
                 background: $bgd_case_item;
@@ -552,23 +552,22 @@ header {
     background-size: cover;
 
     .container {
-        padding: 160px 0 200px;
+        padding: 160px 0 142px;
 
         & h2 {
             color: $black;
         }
 
         .team_content {
-            margin: 40px 0 25px;
+            margin: 50px 0 35px;
             display: flex;
             justify-content: space-between;
 
             .team_item {
-                margin: 10px;
+                width: 289px;
 
                 & img {
                     border-radius: 8px;
-                    width: 289px;
                 }
     
                 .team_name {
@@ -588,6 +587,91 @@ header {
 
         }
 
+        .forums {
+            margin-top: 65px;
+
+            .forums_title {
+                margin-bottom: 16px;
+                display: flex;
+                justify-content: space-between;
+
+                & h3 {
+                    font-weight: 500;
+                    font-size: $fs24;
+                    color: $black;
+                }
+
+                .forum_title_wrap {
+                    display: flex;
+
+                    & a:first-child {
+                        color: $dark_grey;
+                    }
+
+                    & a:last-child {
+                        color: $red;
+                        margin-left: 66px;
+                    }
+                }
+            }
+
+            .forums_info {
+                display: flex;
+                justify-content: space-between;
+                margin: 58px 0 58px;
+
+                .forums_personal_data {
+                    display: flex;
+
+                    & img {
+                        filter: grayscale(100%);
+                    }
+
+                    .forums_personal_data_tekst {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin: 15px;
+
+                        .forums_info_name {
+                            color: $black;
+                        }
+
+                        .forums_info_function {
+                            font-weight: 400;
+                            font-size: $fs;
+                            line-height: 140%;
+                            color: $dark_grey;
+                        }
+                    }
+                }
+
+                .forums_meeting {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .forums_meeting_title {
+                        font-size: $fs18;
+                        color: $black;
+                        border-bottom: 1px solid $red;
+                        border-image: linear-gradient(to right, $red 100%, $red 0%);
+                        border-image-slice: 1;
+                    }
+
+                    .forums_meeting_about {
+                        font-weight: 400;
+                        color: $dark_grey;
+                    }
+                }
+
+                .forums_meeting:first-child {
+                    width: 200px;
+                }
+
+
+            }
+        }
     }
 }
 

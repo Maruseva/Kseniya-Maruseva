@@ -328,10 +328,10 @@ header {
       display: flex;
       justify-content: space-between; }
     .case .container .case_wrap {
-      margin: 40px 0 15px;
-      display: flex; }
+      margin: 50px 0 25px;
+      display: flex;
+      justify-content: space-between; }
       .case .container .case_wrap .case_item {
-        margin: 10px;
         width: 598px;
         height: 289px;
         background: #242424;
@@ -368,18 +368,17 @@ header {
   background: url("../img/bgd/bgd_grey_big.png");
   background-size: cover; }
   .team .container {
-    padding: 160px 0 200px; }
+    padding: 160px 0 142px; }
     .team .container h2 {
       color: #1B1B1B; }
     .team .container .team_content {
-      margin: 40px 0 25px;
+      margin: 50px 0 35px;
       display: flex;
       justify-content: space-between; }
       .team .container .team_content .team_item {
-        margin: 10px; }
+        width: 289px; }
         .team .container .team_content .team_item img {
-          border-radius: 8px;
-          width: 289px; }
+          border-radius: 8px; }
         .team .container .team_content .team_item .team_name {
           color: #1B1B1B;
           font-size: 18px;
@@ -389,5 +388,57 @@ header {
           font-weight: 400;
           font-size: 14px;
           line-height: 140%; }
+    .team .container .forums {
+      margin-top: 65px; }
+      .team .container .forums .forums_title {
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: space-between; }
+        .team .container .forums .forums_title h3 {
+          font-weight: 500;
+          font-size: 24px;
+          color: #1B1B1B; }
+        .team .container .forums .forums_title .forum_title_wrap {
+          display: flex; }
+          .team .container .forums .forums_title .forum_title_wrap a:first-child {
+            color: #5C5C5C; }
+          .team .container .forums .forums_title .forum_title_wrap a:last-child {
+            color: #DA4533;
+            margin-left: 66px; }
+      .team .container .forums .forums_info {
+        display: flex;
+        justify-content: space-between;
+        margin: 58px 0 58px; }
+        .team .container .forums .forums_info .forums_personal_data {
+          display: flex; }
+          .team .container .forums .forums_info .forums_personal_data img {
+            filter: grayscale(100%); }
+          .team .container .forums .forums_info .forums_personal_data .forums_personal_data_tekst {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 15px; }
+            .team .container .forums .forums_info .forums_personal_data .forums_personal_data_tekst .forums_info_name {
+              color: #1B1B1B; }
+            .team .container .forums .forums_info .forums_personal_data .forums_personal_data_tekst .forums_info_function {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 140%;
+              color: #5C5C5C; }
+        .team .container .forums .forums_info .forums_meeting {
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          .team .container .forums .forums_info .forums_meeting .forums_meeting_title {
+            font-size: 18px;
+            color: #1B1B1B;
+            border-bottom: 1px solid #DA4533;
+            border-image: linear-gradient(to right, #DA4533 100%, #DA4533 0%);
+            border-image-slice: 1; }
+          .team .container .forums .forums_info .forums_meeting .forums_meeting_about {
+            font-weight: 400;
+            color: #5C5C5C; }
+        .team .container .forums .forums_info .forums_meeting:first-child {
+          width: 200px; }
 
 /*# sourceMappingURL=styles.css.map */
