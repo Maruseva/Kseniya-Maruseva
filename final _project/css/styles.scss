@@ -73,6 +73,14 @@ h2 {
     right: -17px;
 }
 
+.sliders {
+    text-align: center;
+
+    & img {
+        margin: 10px;
+    } 
+}
+
 //header
 
 header {
@@ -271,7 +279,7 @@ header {
 // section services
 
 .services {
-    background: url($imagepath + 'bgd_grey_small.png');
+    background: url($imagepath + 'bgd/bgd_grey_small.png');
     background-size: cover;
 
     .container {
@@ -355,17 +363,7 @@ header {
                 & p {
                     display: inline;
                 }
-
             }
-        }
-
-        .services_sliders {
-            text-align: center;
-
-            & img {
-                margin: 10px;
-            }
-            
         }
     }
 }
@@ -373,7 +371,7 @@ header {
 // section quiz
 
 .quiz {
-    background: url($imagepath + 'bgd_red_big.png');
+    background: url($imagepath + 'bgd/bgd_red_big.png');
     background-size: cover;
 
     .container {
@@ -418,7 +416,7 @@ header {
                 height: 256px;
 
                 .questions_items {
-                    background: $bgd_quiz_item;
+                    background: $bgd_item;
                     width: 473px;
                     margin: 7.5px;
                     padding: 18px 20px;
@@ -474,8 +472,122 @@ header {
                     font-size: $fs18;
                 }
             }
+        }
+    }
+}
+
+// section case
+
+.case {
+    background: $black;
+
+    .container {
+        padding: 160px 0 155px;
+
+        .case_text {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .case_wrap {
+            margin: 40px 0 15px;
+            display: flex;
+
+            .case_item {
+                margin: 10px;
+                width: 598px;
+                height: 289px;
+                background: $bgd_case_item;
+                border-radius: 8px;
+                display: flex;
+
+                .case_logo {
+                    width: 289px;
+                    height: 289px;
+                    background: $bgd_case_logo;
+                    border-radius: 8px 0 0 8px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .case_partner {
+                    width: 309px;
+                    height: 289px;
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    position: relative;
+            
+
+                    & img {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                    }
+
+                    .case_partner_name {
+                        color: $white_bgd;
+                    }
+
+                    .case_partner_task {
+                        font-weight: 400;
+                        font-size: $fs;
+                        line-height: 165%;
+                    }
+                }
+
+            }
 
         }
+
+    }
+}
+
+//section team
+
+.team {
+    background: url($imagepath + 'bgd/bgd_grey_big.png');
+    background-size: cover;
+
+    .container {
+        padding: 160px 0 200px;
+
+        & h2 {
+            color: $black;
+        }
+
+        .team_content {
+            margin: 40px 0 25px;
+            display: flex;
+            justify-content: space-between;
+
+            .team_item {
+                margin: 10px;
+
+                & img {
+                    border-radius: 8px;
+                    width: 289px;
+                }
+    
+                .team_name {
+                    color: $black;
+                    font-size: $fs18;
+                    margin-bottom: 5px;
+                }
+    
+                .team_function {
+                    color: $dark_grey;
+                    font-weight: 400;
+                    font-size: $fs;
+                    line-height: 140%;
+                }
+
+            }
+
+        }
+
     }
 }
 
