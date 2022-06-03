@@ -40,7 +40,8 @@ h2 {
   font-size: 16px;
   line-height: 160%;
   border-radius: 50%;
-  margin-right: 42px; }
+  margin-right: 42px;
+  cursor: pointer; }
 
 .btn_small {
   width: 135px;
@@ -54,7 +55,8 @@ h2 {
   font-size: 16px;
   line-height: 160%;
   border-radius: 50%;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
 
 .btn_small::after {
   content: url("../img/arrow.svg");
@@ -211,7 +213,8 @@ header {
         padding: 20px;
         position: relative;
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        cursor: pointer; }
         .services .container .services_items .item .arrow {
           position: relative;
           left: 232px; }
@@ -230,14 +233,17 @@ header {
             font-size: 14px;
             line-height: 165%;
             display: none; }
-      .services .container .services_items .item:hover img:first-child {
-        z-index: -1; }
-      .services .container .services_items .item:hover .services_img {
-        width: 130px; }
-      .services .container .services_items .item:hover h4 {
-        color: #FFFFFF; }
-      .services .container .services_items .item:hover p {
-        display: inline; }
+      .services .container .services_items .item:hover {
+        transition-duration: 1s; }
+        .services .container .services_items .item:hover img:first-child {
+          z-index: -1; }
+        .services .container .services_items .item:hover .services_img {
+          width: 130px;
+          opacity: 0.7; }
+        .services .container .services_items .item:hover h4 {
+          color: #FFFFFF; }
+        .services .container .services_items .item:hover p {
+          display: inline; }
     .services .container .services_sliders {
       text-align: center; }
       .services .container .services_sliders img {
@@ -253,13 +259,64 @@ header {
       opacity: 0.75; }
     .quiz .container h3 {
       color: #FFFFFF;
-      font-size: 24px; }
+      font-size: 24px;
+      font-weight: 500; }
     .quiz .container .questions {
       background: #1B1B1B;
       margin: 50px 0;
-      width: fit-content; }
+      width: 1041px;
+      padding: 40px 40px 35px;
+      border-radius: 10px; }
       .quiz .container .questions .questions_title {
         display: flex;
         justify-content: space-between; }
+        .quiz .container .questions .questions_title .namber {
+          font-family: 'STIX Two Text';
+          font-size: 36px;
+          line-height: 45px;
+          color: #FFFFFF; }
+      .quiz .container .questions .questions_wrap {
+        margin: 22.5px 0 28.5px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 256px; }
+        .quiz .container .questions .questions_wrap .questions_items {
+          background: #262626;
+          width: 473px;
+          margin: 7.5px;
+          padding: 18px 20px; }
+          .quiz .container .questions .questions_wrap .questions_items p {
+            opacity: 1;
+            color: #F9F9F9; }
+        .quiz .container .questions .questions_wrap .questions_items:hover {
+          background: #DA4533;
+          cursor: pointer; }
+          .quiz .container .questions .questions_wrap .questions_items:hover p {
+            color: #FFFFFF; }
+      .quiz .container .questions .questions_btn {
+        display: flex;
+        justify-content: space-between; }
+        .quiz .container .questions .questions_btn .btn_small:first-child::after {
+          content: ""; }
+        .quiz .container .questions .questions_btn .btn_small:first-child::before {
+          content: url("../img/arrow_left.svg");
+          position: absolute;
+          left: -17px; }
+    .quiz .container .quiz_bonus {
+      margin-top: 15px;
+      display: flex; }
+      .quiz .container .quiz_bonus .bonus {
+        background: #1B1B1B;
+        border-radius: 8px;
+        width: 392px;
+        height: 131px;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+        .quiz .container .quiz_bonus .bonus p {
+          opacity: 1;
+          font-size: 18px; }
 
 /*# sourceMappingURL=styles.css.map */
