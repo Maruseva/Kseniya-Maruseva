@@ -336,7 +336,8 @@ header {
         height: 289px;
         background: #242424;
         border-radius: 8px;
-        display: flex; }
+        display: flex;
+        cursor: pointer; }
         .case .container .case_wrap .case_item .case_logo {
           width: 289px;
           height: 289px;
@@ -390,6 +391,8 @@ header {
           line-height: 140%; }
     .team .container .forums {
       margin-top: 65px; }
+      .team .container .forums div:last-child {
+        border: none; }
       .team .container .forums .forums_title {
         margin-bottom: 16px;
         display: flex;
@@ -408,11 +411,18 @@ header {
       .team .container .forums .forums_info {
         display: flex;
         justify-content: space-between;
-        margin: 58px 0 58px; }
+        padding: 58px 0;
+        border-bottom: 1px solid;
+        border-image: linear-gradient(to right, #8C8C8C, rgba(0, 0, 0, 0));
+        border-image-slice: 1; }
+        .team .container .forums .forums_info p {
+          padding: 5px 0; }
         .team .container .forums .forums_info .forums_personal_data {
-          display: flex; }
+          display: flex;
+          width: 445px; }
           .team .container .forums .forums_info .forums_personal_data img {
-            filter: grayscale(100%); }
+            filter: grayscale(100%);
+            height: 100px; }
           .team .container .forums .forums_info .forums_personal_data .forums_personal_data_tekst {
             display: flex;
             flex-direction: column;
@@ -425,20 +435,99 @@ header {
               font-size: 14px;
               line-height: 140%;
               color: #5C5C5C; }
-        .team .container .forums .forums_info .forums_meeting {
+        .team .container .forums .forums_info .forums_meeting, .team .container .forums .forums_info .forums_when {
           display: flex;
           flex-direction: column;
           justify-content: center; }
-          .team .container .forums .forums_info .forums_meeting .forums_meeting_title {
+          .team .container .forums .forums_info .forums_meeting .forums_meeting_title, .team .container .forums .forums_info .forums_meeting .forums_meeting_date, .team .container .forums .forums_info .forums_when .forums_meeting_title, .team .container .forums .forums_info .forums_when .forums_meeting_date {
             font-size: 18px;
-            color: #1B1B1B;
-            border-bottom: 1px solid #DA4533;
-            border-image: linear-gradient(to right, #DA4533 100%, #DA4533 0%);
-            border-image-slice: 1; }
-          .team .container .forums .forums_info .forums_meeting .forums_meeting_about {
+            color: #1B1B1B; }
+          .team .container .forums .forums_info .forums_meeting .forums_meeting_about, .team .container .forums .forums_info .forums_meeting .forums_meeting_time, .team .container .forums .forums_info .forums_when .forums_meeting_about, .team .container .forums .forums_info .forums_when .forums_meeting_time {
             font-weight: 400;
             color: #5C5C5C; }
-        .team .container .forums .forums_info .forums_meeting:first-child {
-          width: 200px; }
+          .team .container .forums .forums_info .forums_meeting .forums_meeting_title, .team .container .forums .forums_info .forums_when .forums_meeting_title {
+            border-bottom: 1px solid;
+            border-image: linear-gradient(to right, #DA4533, rgba(0, 0, 0, 0));
+            border-image-slice: 1; }
+        .team .container .forums .forums_info .forums_meeting {
+          width: 495px; }
+        .team .container .forums .forums_info .forums_when {
+          width: 197px;
+          align-items: center; }
+
+.banner {
+  background: url("../img/bgd/bgd_red_small.png");
+  background-size: cover; }
+  .banner .container {
+    display: flex;
+    justify-content: space-between; }
+    .banner .container .banner_text {
+      margin: 100px 0;
+      width: 580px; }
+      .banner .container .banner_text p {
+        color: #FFFFFF;
+        opacity: 0.75; }
+      .banner .container .banner_text .btn_big {
+        margin-top: 44px;
+        background: #1B1B1B; }
+    .banner .container .banner_img {
+      position: relative;
+      margin-top: 21px; }
+      .banner .container .banner_img img:first-child {
+        height: 305px;
+        opacity: 0.2;
+        position: absolute;
+        top: 86px;
+        right: 106px; }
+      .banner .container .banner_img img:last-child {
+        filter: drop-shadow(-40px 40px 12px rgba(0, 0, 0, 0.2)); }
+
+footer {
+  background: #1B1B1B; }
+  footer .container {
+    padding: 100px 0 50px; }
+    footer .container .footer_title {
+      padding-bottom: 50px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid;
+      border-image: linear-gradient(to right, #5C5C5C, rgba(0, 0, 0, 0));
+      border-image-slice: 1; }
+      footer .container .footer_title p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 165%; }
+      footer .container .footer_title .footer_logo {
+        width: 743px;
+        display: flex; }
+        footer .container .footer_title .footer_logo img {
+          width: 209px;
+          height: 47px;
+          margin-right: 19px; }
+      footer .container .footer_title .footer_desk {
+        width: 289px;
+        color: #FFFFFF; }
+    footer .container .footer_contacts {
+      margin: 50px 0;
+      display: flex;
+      justify-content: space-between; }
+      footer .container .footer_contacts nav {
+        display: flex;
+        flex-direction: column; }
+        footer .container .footer_contacts nav p {
+          font-size: 18px;
+          color: #5C5C5C;
+          margin-bottom: 5px; }
+        footer .container .footer_contacts nav a {
+          color: #FFFFFF;
+          margin-top: 15px; }
+    footer .container .footer_row {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 165%; }
+      footer .container .footer_row a {
+        color: #FFFFFF; }
 
 /*# sourceMappingURL=styles.css.map */
