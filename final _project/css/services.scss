@@ -68,13 +68,13 @@ header {
         }
 
         .consultation {
-            display: flex;
-            align-items: center;
-            p {
+            
+            a:first-child {
                 font-size: $fs18;
                 line-height: 22px;
+                color: $white;
             }
-            a {
+            a:last-child {
                 color: $red;
                 margin-left: 20px;
             }

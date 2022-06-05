@@ -78,15 +78,13 @@ header {
     align-items: center; }
     header .container img {
       height: 29px; }
-    header .container .consultation {
-      display: flex;
-      align-items: center; }
-      header .container .consultation p {
-        font-size: 18px;
-        line-height: 22px; }
-      header .container .consultation a {
-        color: #DA4533;
-        margin-left: 20px; }
+    header .container .consultation a:first-child {
+      font-size: 18px;
+      line-height: 22px;
+      color: #FFFFFF; }
+    header .container .consultation a:last-child {
+      color: #DA4533;
+      margin-left: 20px; }
     header .container nav a {
       color: #FFFFFF;
       margin-left: 30px; }
@@ -238,17 +236,15 @@ header {
             font-size: 14px;
             line-height: 165%;
             display: none; }
-      .services .container .services_items .item:hover {
-        transition-duration: 1s; }
-        .services .container .services_items .item:hover img:first-child {
-          z-index: -1; }
-        .services .container .services_items .item:hover .services_img {
-          width: 130px;
-          opacity: 0.7; }
-        .services .container .services_items .item:hover h4 {
-          color: #FFFFFF; }
-        .services .container .services_items .item:hover p {
-          display: inline; }
+      .services .container .services_items .item:hover img:first-child {
+        z-index: -1; }
+      .services .container .services_items .item:hover .services_img {
+        width: 130px;
+        opacity: 0.7; }
+      .services .container .services_items .item:hover h4 {
+        color: #FFFFFF; }
+      .services .container .services_items .item:hover p {
+        display: inline; }
 
 .quiz {
   background: url("../img/bgd/bgd_red_big.png");
