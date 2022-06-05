@@ -117,8 +117,184 @@ header {
     }
 }
 
+// section main
 
+.main {
+    background: $black;
 
+    .container {
+        padding: 54px 0 155px;
+
+        .breadcrumbs {
+            display: flex;
+
+            & img {
+                height: 28px;
+                margin-right: 15px;
+            }
+
+            & p {
+                font-weight: 400;
+                margin: 0 5px;
+            }
+
+            & p::after {
+                content: " > ";
+            }
+
+            & p:last-child {
+                color: $red;
+            }
+
+            & p:last-child::after {
+                content: "";
+            }
+        }
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            background: $bgd_box;
+            border-radius: 10px;
+            box-shadow: -1px -1px 0px 0px $red;
+            margin-top: 35px;
+            padding: 40px;
+
+            .title_tekst {
+                width: 760px;
+
+                & span {
+                    margin: 0 25px 8px 0;
+                    font-weight: 400;
+                    font-size: $fs;
+                    color: $white;
+                    opacity: 0.8;
+                }
+
+                & p {
+                    font-weight: 400;
+                    margin-bottom: 34px;
+                }
+            }
+
+            & img {
+                height: 39px;
+                align-self: center;
+            }
+        }
+
+        .main_wrap {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 155px;
+
+            .about {
+                margin-top: 50px;
+                width: 700px;
+                align-self: flex-end;
+    
+                & h3 {
+                    width: 186px;
+                    font-weight: 500;
+                    font-size: $fs24;
+                    color: $white;
+                    border-bottom: 1px solid;
+                    border-image: linear-gradient(to right, $red, rgba(0, 0, 0, 0));
+                    border-image-slice: 1;
+                    padding-bottom: 4px;
+                }
+    
+                & p {
+                    margin: 16px 0;
+                }
+    
+                & img {
+                    border-radius: 10px;
+                }
+
+                & ol {
+                    margin: 16px 0 16px 18px;
+                    font-weight: 400;
+                }
+
+                & .wrap_img {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 25px;
+                }
+            }
+
+            .about_wrap {
+                display: flex;
+                justify-content: space-between;
+
+                & img[src*="2.jpeg"] {
+                    height: 461px;
+                    border-radius: 10px;
+                    position: relative;
+                    top: 96px;
+                }
+            }
+        }
+
+        .case_row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .case_wrap {
+            margin: 36px 0 25px;
+            display: flex;
+            justify-content: space-between;
+
+            .case_item {
+                width: 598px;
+                height: 289px;
+                background: $bgd_case_item;
+                border-radius: 8px;
+                display: flex;
+                cursor: pointer;
+
+                .case_logo {
+                    width: 289px;
+                    height: 289px;
+                    background: $bgd_case_logo;
+                    border-radius: 8px 0 0 8px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .case_partner {
+                    width: 309px;
+                    height: 289px;
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    position: relative;
+            
+
+                    & img {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                    }
+
+                    .case_partner_name {
+                        color: $white_bgd;
+                    }
+
+                    .case_partner_task {
+                        font-weight: 400;
+                        font-size: $fs;
+                        line-height: 165%;
+                    }
+                }
+            }
+        }
+    }
+}
 
 // section banner
 
