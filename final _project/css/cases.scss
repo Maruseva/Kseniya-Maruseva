@@ -117,199 +117,129 @@ header {
     }
 }
 
-// section main
+// section main 
 
 .main {
     background: $black;
 
     .container {
-        padding: 54px 0 155px;
+        padding: 36px 0 150px;
 
-        .breadcrumbs {
-            display: flex;
-
-            & img {
-                height: 28px;
-                margin-right: 15px;
-            }
-
-            & p {
-                font-weight: 400;
-                margin: 0 5px;
-            }
-
-            & p::after {
-                content: " > ";
-            }
-
-            & p:last-child {
-                color: $red;
-            }
-
-            & p:last-child::after {
-                content: "";
-            }
-        }
-
-        .title {
+        .main_head {
             display: flex;
             justify-content: space-between;
-            background: $bgd_box;
-            border-radius: 10px;
-            box-shadow: -1px -1px 0px 0px $red;
-            margin-top: 35px;
-            padding: 40px;
 
-            .title_tekst {
-                width: 760px;
+            .main_title {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
 
-                & span {
-                    margin: 0 25px 8px 0;
-                    font-weight: 400;
-                    font-size: $fs;
-                    color: $white;
-                    opacity: 0.8;
-                }
+                .breadcrumbs {
+                    display: flex;
 
-                & p {
-                    font-weight: 400;
-                    margin-bottom: 34px;
+                    & img {
+                        height: 28px;
+                        margin-right: 15px;
+                    }
+
+                    & p {
+                        font-weight: 400;
+                        margin: 0 5px;
+                    }
+
+                    & p::after {
+                        content: " > ";
+                    }
+
+                    & p:last-child {
+                        color: $red;
+                    }
+
+                    & p:last-child::after {
+                        content: "";
+                    }
                 }
             }
 
             & img {
-                opacity: 0.6;
+                height: 234px;
             }
         }
 
-        .task, .process, .service {
-            margin-top: 160px;
+        .search {
+            position: relative;
+            margin-bottom: 25px;
 
-            .task_wrap, .process_wrap, .service_wrap {
-                margin-top: 34px;
+            & input {
+                width: 907px;
+                height: 56px;
+                border-radius: 8px;
+                border: none;
+                background: $bgd_serv;
+                padding: 15px;
+                font-weight: 400;
+            }
+
+            & img {
+                position: absolute;
+                top: 16px;
+                right: 325px;
+            }
+        }
+
+        .main_wrap {
+            display: flex;
+            flex-wrap: wrap;
+
+            .case_item {
+                margin: 10px auto;
+                width: 598px;
+                height: 289px;
+                background: $bgd_case_item;
+                border-radius: 8px;
                 display: flex;
-                justify-content: space-between;
+                cursor: pointer;
 
-                .task_item {
-                    width: 392px;
-                    height: 181px;
-                    background: $bgd_box;
-                    border-radius: 8px;
-                    box-shadow: -1px -1px 0px 0px $red;
-                    padding: 20px;
-
-                    & h4 {
-                        font-weight: 500;
-                        font-size: $fs18;
-                        color: $white;
-                        margin-bottom: 5px;
-                    }
-
-                    & p {
-                        font-weight: 400;
-                    }
-                }
-
-                .process_item {
-                    width: 392px;
-
-                    & h4 {
-                        font-weight: 500;
-                        font-size: $fs18;
-                        color: $white;
-                        margin-bottom: 11px;
-
-                        & span {
-                            position: relative;
-                            bottom: 15px;
-                            left: 15px;
-                        }
-                    }
-
-                    & p {
-                        font-weight: 400;
-                    }
-                }
-
-                @for $num from 1 through 3 {
-                    .process_item:nth-child(#{$num}) h4::before {
-                        content: url($imagepath + $num + ".svg");
-                    }
-                }
-
-                .item {
+                .case_logo {
                     width: 289px;
-                    height: 400px;
-                    background: $bgd_box;
-                    border-radius: 3%;
+                    height: 289px;
+                    background: $bgd_case_logo;
+                    border-radius: 8px 0 0 8px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .case_partner {
+                    width: 309px;
+                    height: 289px;
                     padding: 20px;
-                    position: relative;
                     display: flex;
                     flex-direction: column;
-                    cursor: pointer;
-    
-                    .arrow {
-                        position: relative;
-                        left: 232px;
-    
-                        & img:first-child {
-                            position: absolute;
-                        }
+                    justify-content: center;
+                    position: relative;
+            
+
+                    & img {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
                     }
-    
-                    .services_img {
-                        display: block;
-                        width: 160px;
-                        margin: 38px auto 0;
+
+                    .case_partner_name {
+                        color: $white_bgd;
                     }
-    
-                    .link {
-                        margin-top: auto;
-                    
-                        & h4 {
-                            font-size: $fs18;
-                        }
-        
-                        & p {
-                            font-weight: 400;
-                            font-size: $fs;
-                            line-height: 165%;
-                            display: none;
-                        }
-                    }
-                }
-    
-                .item:hover {
-    
-                    & img:first-child {
-                        z-index: -1;
-                    }
-    
-                    .services_img {
-                        width: 130px;
-                        opacity: 0.7;
-                    }    
-    
-                    & h4 {
-                        color: $white;
-                    }
-                    & p {
-                        display: inline;
+
+                    .case_partner_task {
+                        font-weight: 400;
+                        font-size: $fs;
+                        line-height: 165%;
                     }
                 }
             }
-
-            .service_title {
-                display: flex;
-                justify-content: space-between;
-            }
         }
-
-        .sliders {
-            margin-top: 35px;
-        }
-    }
-}
+    }    
+}    
 
 // section banner
 
