@@ -12,11 +12,6 @@ $bgd_case_logo: #303030;
 $border: #8C8C8C;
 $bgd_serv: #1f1f1f;
 
-
-
-
-
-
 //fonts-size
 $fs: 14px;
 $fs16: $fs + 2;
@@ -24,11 +19,13 @@ $fs18: $fs + 4;
 $fs24: $fs + 10;
 $fs36: $fs + 22;
 $fs38: $fs + 24;
+$fs48: $fs + 34;
 $fs55: $fs + 41;
-
 
 //container
 $xl: 1220px;
+$l: 1000px;
+$xs:480px;
 
 //imagepath
 $imagepath: "../img/";

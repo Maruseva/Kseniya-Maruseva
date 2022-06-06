@@ -58,9 +58,9 @@
         height: 356px;
         filter: drop-shadow(-60px 60px 12px rgba(0, 0, 0, 0.2)); }
     .wrap .container .contant .inner {
-      padding-left: 48px; }
+      padding-left: 38px; }
       .wrap .container .contant .inner .about {
-        margin-bottom: 100px; }
+        margin-bottom: 90px; }
         .wrap .container .contant .inner .about .info {
           margin-top: 40px;
           height: 471px;
@@ -83,13 +83,13 @@
                 line-height: 45px;
                 color: #FFFFFF; }
       .wrap .container .contant .inner .partners {
-        margin-bottom: 160px; }
+        margin-bottom: 150px; }
         .wrap .container .contant .inner .partners .partners_logo {
           height: 417px;
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
-          margin-top: 50px; }
+          margin-top: 40px; }
           .wrap .container .contant .inner .partners .partners_logo .logo {
             width: 392px;
             height: 119px;
@@ -290,5 +290,40 @@
         .team .container .forums .forums_info .forums_when {
           width: 197px;
           align-items: center; }
+
+@media all and (max-width: 1280px) {
+  .wrap .container .head_page .title p {
+    max-width: 456px; }
+  .wrap .container .head_page .title h1 {
+    font-size: 48px; }
+  .wrap .container .head_page .head_page_img img:first-child {
+    height: 246px;
+    bottom: 67px;
+    right: 23px; }
+  .wrap .container .head_page .head_page_img img:last-child {
+    height: 444px;
+    position: relative;
+    bottom: -78px; }
+  .wrap .container .contant {
+    margin-top: 125px; }
+    .wrap .container .contant .contant_img img:first-child {
+      height: 273px;
+      top: 73px;
+      right: 0; }
+    .wrap .container .contant .contant_img img:last-child {
+      height: 284px; }
+    .wrap .container .contant .inner {
+      padding-left: 32px; }
+      .wrap .container .contant .inner .about .info {
+        margin-top: 30px; }
+        .wrap .container .contant .inner .about .info .box {
+          width: 307px; }
+      .wrap .container .contant .inner .partners {
+        margin-bottom: 110px; }
+        .wrap .container .contant .inner .partners .partners_logo {
+          margin-top: 30px; }
+          .wrap .container .contant .inner .partners .partners_logo .logo {
+            width: 306px;
+            height: 93px; } }
 
 /*# sourceMappingURL=styles.css.map */

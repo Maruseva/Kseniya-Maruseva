@@ -94,10 +94,10 @@
             }
 
             .inner {
-                padding-left: 48px;
+                padding-left: 38px;
 
                 .about {
-                    margin-bottom: 100px;
+                    margin-bottom: 90px;
 
                     .info {
                         margin-top: 40px;
@@ -130,14 +130,14 @@
                 }
 
                 .partners {
-                    margin-bottom: 160px;
+                    margin-bottom: 150px;
 
                     .partners_logo {
                         height: 417px;
                         display: flex;
                         flex-direction: column;
                         flex-wrap: wrap;
-                        margin-top: 50px;
+                        margin-top: 40px;
 
                         .logo {
                             width: 392px;
@@ -463,6 +463,81 @@
                 .forums_when {
                     width: 197px;
                     align-items: center;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width:1280px) {
+
+    //section wrap
+
+    .wrap {
+        .container {
+            .head_page {
+                .title {
+                    p {
+                        max-width: 456px;
+                    }
+                    h1 {
+                        font-size: $fs48;
+                    }
+                }
+                .head_page_img {
+                    img:first-child {
+                        height: 246px;
+                        bottom: 67px;
+                        right: 23px;
+                    }
+                    img:last-child {
+                        height: 444px;
+                        position: relative;
+                        bottom: -78px;
+                    }
+                }
+            }
+            .contant {
+                margin-top: 125px;
+
+                .contant_img {
+                    & img:first-child {
+                        height: 273px;
+                        top: 73px;
+                        right: 0;
+                    }
+            
+                    & img:last-child {
+                        height: 284px;
+                    }
+                }
+
+                .inner {
+                    padding-left: 32px;
+                    
+                    .about {
+
+                        .info {
+                            margin-top: 30px;
+
+                            .box {
+                                width: 307px;
+                            }
+                        }
+                    }
+
+                    .partners {
+                        margin-bottom: 110px;
+
+                        .partners_logo {
+                            margin-top: 30px;
+
+                            .logo {
+                                width: 306px;
+                                height: 93px;
+                            }
+                        }
+                    }  
                 }
             }
         }
