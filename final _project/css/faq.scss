@@ -117,8 +117,118 @@ header {
     }
 }
 
+// section main 
 
+.main {
+    background: $black;
 
+    .container {
+        padding: 0 0 140px;
+
+        .main_head {
+            display: flex;
+            justify-content: space-between;
+
+            .main_title {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .breadcrumbs {
+                    display: flex;
+
+                    & img {
+                        height: 28px;
+                        margin-right: 15px;
+                    }
+
+                    & p {
+                        font-weight: 400;
+                        margin: 0 5px;
+                    }
+
+                    & p::after {
+                        content: " > ";
+                    }
+
+                    & p:last-child {
+                        color: $red;
+                    }
+
+                    & p:last-child::after {
+                        content: "";
+                    }
+                }
+            }
+
+            & img {
+                height: 234px;
+            }
+        }
+
+        .search {
+            position: relative;
+            margin-bottom: 25px;
+
+            & input {
+                width: 907px;
+                height: 56px;
+                border-radius: 8px;
+                border: none;
+                background: $bgd_serv;
+                padding: 15px;
+                font-weight: 400;
+            }
+
+            & img {
+                position: absolute;
+                top: 16px;
+                right: 325px;
+            }
+        }
+
+        .main_wrap {
+            display: flex;
+            justify-content: space-between;
+
+            .main_wrap_box {
+                width: 598px;
+                margin: 10px auto;
+
+                .box_faq {
+                    display: flex;
+                    justify-content: space-between;
+                    background: $bgd_box;
+                    padding: 18px 20px;
+                    border-radius: 8px;
+                    font-size: $fs18;
+                    cursor: pointer;
+
+                }
+
+                .answer {
+                    font-weight: 400;
+                    margin-top: 4px;
+                    display: none;
+                }
+
+                
+            } 
+            .main_wrap_box:hover {
+                .answer {
+                    display:block;
+                }
+                
+                .box_faq {
+                    background: $dark_grey;
+                     & p{
+                         color: $white;
+                     }
+                }
+            }
+        }
+    }
+}
 
 // section banner
 

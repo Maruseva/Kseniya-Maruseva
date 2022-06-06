@@ -163,18 +163,15 @@ header {
             font-size: 14px;
             line-height: 165%;
             display: none; }
-      .main .container .main_wrap .item:hover {
-        -webkit-transition-duration: 1s;
-                transition-duration: 1s; }
-        .main .container .main_wrap .item:hover img:first-child {
-          z-index: -1; }
-        .main .container .main_wrap .item:hover .services_img {
-          width: 130px;
-          opacity: 0.7; }
-        .main .container .main_wrap .item:hover h4 {
-          color: #FFFFFF; }
-        .main .container .main_wrap .item:hover p {
-          display: inline; }
+      .main .container .main_wrap .item:hover img:first-child {
+        z-index: -1; }
+      .main .container .main_wrap .item:hover .services_img {
+        width: 130px;
+        opacity: 0.7; }
+      .main .container .main_wrap .item:hover h4 {
+        color: #FFFFFF; }
+      .main .container .main_wrap .item:hover p {
+        display: inline; }
 
 .banner {
   background: url("../img/bgd/bgd_red_small.png");

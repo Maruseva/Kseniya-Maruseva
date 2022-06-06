@@ -201,8 +201,6 @@ header {
             }
 
             .item:hover {
-
-                transition-duration: 1s;
                 & img:first-child {
                     z-index: -1;
                 }
