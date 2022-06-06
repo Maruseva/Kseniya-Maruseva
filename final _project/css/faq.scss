@@ -1,124 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=STIX+Two+Text:ital,wght@0,400;0,500;1,500&display=swap');
 @import "viriables";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: $fs16;
-    line-height: 160%;
-    color: $grey;
-}
-
-.container {
-    width: $xl;
-    margin: 0 auto;
-}
-
-a {
-    text-decoration: none;
-}
-
-h2 {
-    font-family: 'STIX Two Text';
-    font-style: normal;
-    font-weight: 400;
-    font-size: $fs38;
-    line-height: 135%;
-    color: $white;
-    margin-bottom: 16px;
-}
-
-.btn_big {
-    width: 299px;
-    height: 91px;
-    border: none;
-    background: $red;
-    color: $white;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: $fs16;
-    line-height: 160%;
-    border-radius: 50%;
-    margin-right: 42px;
-    cursor: pointer;
-}
-
-.btn_small {
-    width: 135px;
-    height: 41px;
-    border: solid 1px $red;
-    background: $black;
-    color: $red;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: $fs16;
-    line-height: 160%;
-    border-radius: 50%;
-    position: relative;
-    cursor: pointer;
-}
-
-.btn_small::after {
-    content: url($imagepath + 'arrow.svg');
-    position: absolute;
-    right: -17px;
-}
-
-.sliders {
-    text-align: center;
-
-    & img {
-        margin: 10px;
-    } 
-}
-
-//header
-
-header {
-    background: $black;
-    color: $white;
-    
-    .container {
-        height: 70px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        img {
-            height: 29px;
-        }
-
-        .consultation {
-
-            a:first-child {
-                font-size: $fs18;
-                line-height: 22px;
-                color: $white;
-            }
-            a:last-child {
-                color: $red;
-                margin-left: 20px;
-            }
-        }
-
-        nav a {
-            color: $white;
-            margin-left: 30px;
-        }
-    }
-}
-
-// section main 
-
 .main {
     background: $black;
 
@@ -134,56 +16,13 @@ header {
                 flex-direction: column;
                 justify-content: space-around;
 
-                .breadcrumbs {
-                    display: flex;
-
-                    & img {
-                        height: 28px;
-                        margin-right: 15px;
-                    }
-
-                    & p {
-                        font-weight: 400;
-                        margin: 0 5px;
-                    }
-
-                    & p::after {
-                        content: " > ";
-                    }
-
-                    & p:last-child {
-                        color: $red;
-                    }
-
-                    & p:last-child::after {
-                        content: "";
-                    }
-                }
+                & img {
+                    height: 28px;
+                } 
             }
 
             & img {
                 height: 234px;
-            }
-        }
-
-        .search {
-            position: relative;
-            margin-bottom: 25px;
-
-            & input {
-                width: 907px;
-                height: 56px;
-                border-radius: 8px;
-                border: none;
-                background: $bgd_serv;
-                padding: 15px;
-                font-weight: 400;
-            }
-
-            & img {
-                position: absolute;
-                top: 16px;
-                right: 325px;
             }
         }
 
@@ -203,147 +42,28 @@ header {
                     border-radius: 8px;
                     font-size: $fs18;
                     cursor: pointer;
-
                 }
 
                 .answer {
                     font-weight: 400;
                     margin-top: 4px;
                     display: none;
-                }
-
-                
+                }  
             } 
+
             .main_wrap_box:hover {
+
                 .answer {
                     display:block;
                 }
                 
-                .box_faq {
+                .box_faq { 
                     background: $dark_grey;
-                     & p{
-                         color: $white;
-                     }
+
+                    & p { 
+                        color: $white;
+                    }
                 }
-            }
-        }
-    }
-}
-
-// section banner
-
-.banner {
-    background: url($imagepath + 'bgd/bgd_red_small.png');
-    background-size: cover;
-
-    .container {
-        display: flex;
-        justify-content: space-between;
-
-        .banner_text {
-            margin: 100px 0;
-            width: 600px;
-
-            & p {
-                color: $white;
-                opacity: 0.75;
-            }
-    
-            .btn_big {
-                margin-top: 44px;
-                background: $black;
-            }
-        }
-
-        .banner_img {
-            position: relative;
-            margin-top: 21px;
-        
-            & img:first-child {
-                height: 305px;
-                opacity: 0.2;
-                position: absolute;
-                top: 86px;
-                right: 106px;
-            }
-    
-            & img:last-child {
-                filter: drop-shadow(-40px 40px 12px rgba(0, 0, 0, 0.2));
-            }
-        }
-    }
-}
-
-// footer
-
-footer {
-    background: $black;
-
-    .container {
-        padding: 100px 0 50px;
-
-        .footer_title {
-            padding-bottom: 50px;
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid;
-            border-image: linear-gradient(to right, $dark_grey, rgba(0, 0, 0, 0));
-            border-image-slice: 1;
-
-            & p {
-                font-weight: 400;
-                font-size: $fs;
-                line-height: 165%;
-            }
-
-            .footer_logo {
-                width: 743px;
-                display: flex;
-
-                & img {
-                    width: 209px;
-                    height: 47px;
-                    margin-right: 19px;
-                }
-            }
-
-            .footer_desk {
-                width: 289px;
-                color: $white;
-            }
-        }
-
-        .footer_contacts {
-            margin: 50px 0;
-            display: flex;
-            justify-content: space-between;
-
-            & nav {
-                display: flex;
-                flex-direction: column;
-
-                & p {
-                    font-size: $fs18;
-                    color: $dark_grey;
-                    margin-bottom: 5px;
-                }
-
-                & a {
-                    color: $white;
-                    margin-top: 15px;
-                }
-            }
-        }
-
-        .footer_row {
-            display: flex;
-            justify-content: space-between;
-            font-weight: 400;
-            font-size: $fs;
-            line-height: 165%;
-
-            a {
-                color: $white;
             }
         }
     }
