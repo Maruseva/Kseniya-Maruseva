@@ -76,7 +76,7 @@ h2 {
 .sliders {
     text-align: center;
 
-    &img {
+    & img {
         margin: 10px;
     } 
 }
@@ -396,6 +396,17 @@ footer {
         width: $l;
     }
 
+    .search {
+
+        & input {
+            width: 990px;
+        }
+
+        & img {
+            right: 58px;
+        }
+    }
+
     .item {
         width: 307px;
         height: 425px;
@@ -440,4 +451,22 @@ footer {
             height: 380px;
         }
     }
+}
+
+@media all and (max-width:1024px) {
+
+    .container {
+        width: $xs;
+    }
+
+    h2 {
+        font-size: $fs28;
+        margin-bottom: 14px;
+    }
+
+    .btn_big {
+        margin: 0 auto;
+    }
+
+
 }

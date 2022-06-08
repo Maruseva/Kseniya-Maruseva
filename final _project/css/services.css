@@ -2,7 +2,7 @@
 .main {
   background: #1B1B1B; }
   .main .container {
-    padding: 36px 0 130px; }
+    padding: 36px 0 110px; }
     .main .container .main_head {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -28,3 +28,11 @@
           flex-wrap: wrap; }
       .main .container .main_wrap .item {
         margin: 15px auto; }
+
+@media all and (max-width: 1280px) {
+  .main .container {
+    padding: 20px 0 105px; }
+    .main .container .main_head img:last-child {
+      height: 210px; }
+    .main .container .main_wrap .item {
+      margin: 10px; } }

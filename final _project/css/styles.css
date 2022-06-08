@@ -131,48 +131,65 @@
       color: #FFFFFF;
       font-size: 24px;
       font-weight: 500; }
-    .quiz .container .questions {
-      background: #1B1B1B;
-      margin: 50px 0;
-      width: 1041px;
-      padding: 40px 40px 35px;
-      border-radius: 10px; }
-      .quiz .container .questions .questions_title {
-        display: flex;
-        justify-content: space-between; }
-        .quiz .container .questions .questions_title .namber {
-          font-family: 'STIX Two Text';
-          font-size: 36px;
-          line-height: 45px;
-          color: #FFFFFF; }
-      .quiz .container .questions .questions_wrap {
-        margin: 22.5px 0 28.5px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 256px; }
-        .quiz .container .questions .questions_wrap .questions_items {
-          background: #262626;
-          width: 473px;
-          margin: 7.5px;
-          padding: 18px 20px; }
-          .quiz .container .questions .questions_wrap .questions_items p {
-            opacity: 1;
-            color: #F9F9F9; }
-        .quiz .container .questions .questions_wrap .questions_items:hover {
-          background: #DA4533;
-          cursor: pointer; }
-          .quiz .container .questions .questions_wrap .questions_items:hover p {
+    .quiz .container .adapt {
+      display: flex;
+      justify-content: space-between; }
+      .quiz .container .adapt .questions {
+        background: #1B1B1B;
+        margin: 50px 0;
+        width: 1041px;
+        padding: 40px 40px 35px;
+        border-radius: 10px; }
+        .quiz .container .adapt .questions .questions_title {
+          display: flex;
+          justify-content: space-between; }
+          .quiz .container .adapt .questions .questions_title .namber {
+            font-family: 'STIX Two Text';
+            font-size: 36px;
+            line-height: 45px;
             color: #FFFFFF; }
-      .quiz .container .questions .questions_btn {
-        display: flex;
-        justify-content: space-between; }
-        .quiz .container .questions .questions_btn .btn_small:first-child::after {
-          content: ""; }
-        .quiz .container .questions .questions_btn .btn_small:first-child::before {
-          content: url("../img/arrow_left.svg");
+        .quiz .container .adapt .questions .questions_wrap {
+          margin: 22.5px 0 28.5px;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          height: 256px; }
+          .quiz .container .adapt .questions .questions_wrap .questions_items {
+            background: #262626;
+            width: 473px;
+            margin: 7.5px;
+            padding: 18px 20px; }
+            .quiz .container .adapt .questions .questions_wrap .questions_items p {
+              opacity: 1;
+              color: #F9F9F9; }
+          .quiz .container .adapt .questions .questions_wrap .questions_items:hover {
+            background: #DA4533;
+            cursor: pointer; }
+            .quiz .container .adapt .questions .questions_wrap .questions_items:hover p {
+              color: #FFFFFF; }
+        .quiz .container .adapt .questions .questions_btn {
+          display: flex;
+          justify-content: space-between; }
+          .quiz .container .adapt .questions .questions_btn .btn_small:first-child::after {
+            content: ""; }
+          .quiz .container .adapt .questions .questions_btn .btn_small:first-child::before {
+            content: url("../img/arrow_left.svg");
+            position: absolute;
+            left: -17px; }
+      .quiz .container .adapt .img_wrap {
+        position: relative;
+        display: none; }
+        .quiz .container .adapt .img_wrap img:first-child {
+          height: 282px;
+          position: relative;
+          top: -170px;
+          right: 10px; }
+        .quiz .container .adapt .img_wrap img:last-child {
           position: absolute;
-          left: -17px; }
+          top: -226px;
+          right: -22px;
+          height: 323px;
+          filter: drop-shadow(-60px 60px 12px rgba(0, 0, 0, 0.2)); }
     .quiz .container .quiz_bonus {
       margin-top: 15px;
       display: flex; }
@@ -182,12 +199,14 @@
         width: 392px;
         height: 131px;
         margin: 10px;
+        padding: 15px;
         display: flex;
         align-items: center;
         justify-content: space-around; }
         .quiz .container .quiz_bonus .bonus p {
           opacity: 1;
-          font-size: 18px; }
+          font-size: 18px;
+          padding: 15px; }
 
 .case {
   background: #1B1B1B; }
@@ -209,7 +228,7 @@
     .team .container h2 {
       color: #1B1B1B; }
     .team .container .team_content {
-      margin: 50px 0 35px;
+      margin: 50px 0 25px;
       display: flex;
       justify-content: space-between; }
       .team .container .team_content .team_item {
@@ -230,7 +249,6 @@
       .team .container .forums div:last-child {
         border: none; }
       .team .container .forums .forums_title {
-        margin-bottom: 16px;
         display: flex;
         justify-content: space-between; }
         .team .container .forums .forums_title h3 {
@@ -277,7 +295,8 @@
           justify-content: center; }
           .team .container .forums .forums_info .forums_meeting .forums_meeting_title, .team .container .forums .forums_info .forums_meeting .forums_meeting_date, .team .container .forums .forums_info .forums_when .forums_meeting_title, .team .container .forums .forums_info .forums_when .forums_meeting_date {
             font-size: 18px;
-            color: #1B1B1B; }
+            color: #1B1B1B;
+            text-align: center; }
           .team .container .forums .forums_info .forums_meeting .forums_meeting_about, .team .container .forums .forums_info .forums_meeting .forums_meeting_time, .team .container .forums .forums_info .forums_when .forums_meeting_about, .team .container .forums .forums_info .forums_when .forums_meeting_time {
             font-weight: 400;
             color: #5C5C5C; }
@@ -289,7 +308,8 @@
           width: 495px; }
         .team .container .forums .forums_info .forums_when {
           width: 197px;
-          align-items: center; }
+          align-items: center;
+          width: 146px; }
 
 @media all and (max-width: 1280px) {
   .wrap .container .head_page .title p {
@@ -324,6 +344,56 @@
           margin-top: 30px; }
           .wrap .container .contant .inner .partners .partners_logo .logo {
             width: 306px;
-            height: 93px; } }
+            height: 93px; }
+
+  .services .container {
+    padding: 120px 0 115px; }
+    .services .container .services_items {
+      margin-top: 40px; }
+
+  .quiz .container {
+    padding: 120px 0 120px;
+    position: relative; }
+    .quiz .container h2, .quiz .container h3, .quiz .container p {
+      display: none; }
+    .quiz .container .adapt .questions {
+      margin: 0;
+      width: 633px; }
+      .quiz .container .adapt .questions h3, .quiz .container .adapt .questions p {
+        display: inline-block; }
+      .quiz .container .adapt .questions .questions_wrap {
+        display: block;
+        height: fit-content; }
+        .quiz .container .adapt .questions .questions_wrap .questions_items {
+          margin: 7.5px auto; }
+    .quiz .container .adapt .img_wrap {
+      display: block; }
+    .quiz .container .quiz_bonus {
+      margin-top: 35px; }
+      .quiz .container .quiz_bonus .bonus {
+        width: 633px;
+        margin: 0; }
+        .quiz .container .quiz_bonus .bonus p {
+          display: inline; }
+      .quiz .container .quiz_bonus .bonus:last-child {
+        display: none; }
+
+  .case .container {
+    padding: 120px 0 115px; }
+    .case .container .case_wrap {
+      margin-top: 40px; }
+
+  .team .container {
+    padding: 120px 0 92px; }
+    .team .container .team_content {
+      margin: 30px 0 35px; }
+      .team .container .team_content .team_item {
+        width: 307px; }
+    .team .container .forums {
+      margin-top: 35px; }
+      .team .container .forums .forums_info {
+        padding: 44px 0; }
+        .team .container .forums .forums_info .forums_when {
+          background: url("../img/bgd_circle.svg") center/115px no-repeat, url("../img/arrow.svg") center right no-repeat; } }
 
 /*# sourceMappingURL=styles.css.map */

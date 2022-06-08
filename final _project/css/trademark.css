@@ -81,4 +81,21 @@
             -ms-flex-pack: justify;
                 justify-content: space-between; }
     .main .container .sliders {
-      margin-top: 35px; }
+      margin-top: 25px; }
+
+@media all and (max-width: 1280px) {
+  .main .container {
+    padding: 44px 0 115px; }
+    .main .container .title {
+      padding: 30px; }
+      .main .container .title .title_tekst {
+        width: 603px; }
+    .main .container .task, .main .container .process, .main .container .service {
+      margin-top: 120px; }
+      .main .container .task .task_wrap, .main .container .task .process_wrap, .main .container .task .service_wrap, .main .container .process .task_wrap, .main .container .process .process_wrap, .main .container .process .service_wrap, .main .container .service .task_wrap, .main .container .service .process_wrap, .main .container .service .service_wrap {
+        margin-top: 24px; }
+        .main .container .task .task_wrap .task_item, .main .container .task .process_wrap .task_item, .main .container .task .service_wrap .task_item, .main .container .process .task_wrap .task_item, .main .container .process .process_wrap .task_item, .main .container .process .service_wrap .task_item, .main .container .service .task_wrap .task_item, .main .container .service .process_wrap .task_item, .main .container .service .service_wrap .task_item {
+          width: 307px;
+          height: 204px; }
+        .main .container .task .task_wrap .process_item, .main .container .task .process_wrap .process_item, .main .container .task .service_wrap .process_item, .main .container .process .task_wrap .process_item, .main .container .process .process_wrap .process_item, .main .container .process .service_wrap .process_item, .main .container .service .task_wrap .process_item, .main .container .service .process_wrap .process_item, .main .container .service .service_wrap .process_item {
+          width: 308px; } }

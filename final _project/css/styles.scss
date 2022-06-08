@@ -210,67 +210,92 @@
             font-weight: 500;
         }
 
-        .questions {
-            background: $black;
-            margin: 50px 0;
-            width: 1041px;
-            padding: 40px 40px 35px;
-            border-radius: 10px;
-            
+        .adapt {
+            display: flex;
+            justify-content: space-between;
 
-            .questions_title {
-                display: flex;
-                justify-content: space-between;
-
-                .namber {
-                    font-family: 'STIX Two Text';
-                    font-size: $fs36;
-                    line-height: 45px;
-                    color: $white;
-                }
-            }
-
-            .questions_wrap {
-                margin: 22.5px 0 28.5px;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                height: 256px;
-
-                .questions_items {
-                    background: $bgd_item;
-                    width: 473px;
-                    margin: 7.5px;
-                    padding: 18px 20px;
-
-                    & p {
-                        opacity: 1;
-                        color: $white_bgd;
-                    }
-                }
-
-                .questions_items:hover {
-                    background: $red;
-                    cursor: pointer;
-
-                    & p {
+            .questions {
+                background: $black;
+                margin: 50px 0;
+                width: 1041px;
+                padding: 40px 40px 35px;
+                border-radius: 10px;
+                
+    
+                .questions_title {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .namber {
+                        font-family: 'STIX Two Text';
+                        font-size: $fs36;
+                        line-height: 45px;
                         color: $white;
                     }
                 }
+    
+                .questions_wrap {
+                    margin: 22.5px 0 28.5px;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    height: 256px;
+    
+                    .questions_items {
+                        background: $bgd_item;
+                        width: 473px;
+                        margin: 7.5px;
+                        padding: 18px 20px;
+    
+                        & p {
+                            opacity: 1;
+                            color: $white_bgd;
+                        }
+                    }
+    
+                    .questions_items:hover {
+                        background: $red;
+                        cursor: pointer;
+    
+                        & p {
+                            color: $white;
+                        }
+                    }
+                }
+    
+                .questions_btn {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .btn_small:first-child::after {
+                        content: "";
+                    }
+    
+                    .btn_small:first-child::before {
+                        content: url($imagepath + 'arrow_left.svg');
+                        position: absolute;
+                        left: -17px;
+                    }
+                }
             }
 
-            .questions_btn {
-                display: flex;
-                justify-content: space-between;
-
-                .btn_small:first-child::after {
-                    content: "";
+            .img_wrap {
+                position: relative;
+                display: none;
+    
+                & img:first-child {
+                    height: 282px;
+                    position: relative;
+                    top: -170px;
+                    right: 10px;
                 }
-
-                .btn_small:first-child::before {
-                    content: url($imagepath + 'arrow_left.svg');
+    
+                & img:last-child {
                     position: absolute;
-                    left: -17px;
+                    top: -226px;
+                    right: -22px;
+                    height: 323px;
+                    filter: drop-shadow(-60px 60px 12px rgba(0, 0, 0, 0.2))
                 }
             }
         }
@@ -285,6 +310,7 @@
                 width: 392px;
                 height: 131px;
                 margin: 10px;
+                padding: 15px;
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
@@ -292,6 +318,7 @@
                 & p {
                     opacity: 1;
                     font-size: $fs18;
+                    padding: 15px;
                 }
             }
         }
@@ -333,7 +360,7 @@
         }
 
         .team_content {
-            margin: 50px 0 35px;
+            margin: 50px 0 25px;
             display: flex;
             justify-content: space-between;
 
@@ -369,7 +396,6 @@
             }
 
             .forums_title {
-                margin-bottom: 16px;
                 display: flex;
                 justify-content: space-between;
 
@@ -441,6 +467,7 @@
                     .forums_meeting_title, .forums_meeting_date {
                         font-size: $fs18;
                         color: $black; 
+                        text-align: center;
                     }
 
                     .forums_meeting_about, .forums_meeting_time {
@@ -457,12 +484,12 @@
 
                 .forums_meeting {
                     width: 495px;
-
                 }
 
                 .forums_when {
                     width: 197px;
                     align-items: center;
+                    width: 146px;
                 }
             }
         }
@@ -538,6 +565,119 @@
                             }
                         }
                     }  
+                }
+            }
+        }
+    }
+
+    // section services
+
+    .services {
+
+        .container {
+            padding: 120px 0 115px;
+    
+            .services_items {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    // section quiz
+
+    .quiz {
+
+        .container {
+            padding: 120px 0 120px;
+            position: relative;
+
+            & h2, h3, p {
+                display: none;
+            }
+
+            .adapt {
+
+                .questions {
+                    margin: 0;
+                    width: 633px;
+    
+                    & h3, p {
+                        display: inline-block;
+                    }
+    
+                    .questions_wrap {
+                        display: block;
+                        height: fit-content;
+    
+                        .questions_items {
+                            margin: 7.5px auto;
+                        }
+                    }
+                }
+
+                .img_wrap {
+                    display: block;
+                }
+            }
+
+            .quiz_bonus {
+                margin-top: 35px;
+
+                .bonus {
+                    width: 633px;
+                    margin: 0;
+
+                    & p{
+                        display: inline;
+                    }
+                }
+
+                .bonus:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    // section case
+
+    .case {
+
+        .container {
+            padding: 120px 0 115px;
+
+            .case_wrap {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    // section team
+
+    .team {
+
+        .container {
+            padding: 120px 0 92px;
+
+            .team_content {
+                margin: 30px 0 35px;
+
+                .team_item {
+                    width: 307px;
+
+                }
+            }
+
+            .forums {
+                margin-top: 35px;
+
+                .forums_info {
+                    padding: 44px 0;
+
+                    .forums_when {
+                        background: url($imagepath + 'bgd_circle.svg') center / 115px no-repeat, 
+                        url($imagepath + 'arrow.svg') center right no-repeat;
+                    }
                 }
             }
         }

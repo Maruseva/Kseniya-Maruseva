@@ -32,3 +32,9 @@
           flex-wrap: wrap; }
       .main .container .main_wrap .case_item {
         margin: 10px auto; }
+
+@media all and (max-width: 1280px) {
+  .main .container {
+    padding: 0 0 110px; }
+    .main .container .main_head img {
+      height: 200px; } }

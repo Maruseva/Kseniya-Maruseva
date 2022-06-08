@@ -5,7 +5,7 @@
     background: $black;
 
     .container {
-        padding: 36px 0 130px;
+        padding: 36px 0 110px;
 
         .main_head {
             display: flex;
@@ -24,8 +24,30 @@
             
             .item {
                 margin: 15px auto;
-
             } 
+        }
+    }
+}
+
+@media all and (max-width:1280px) {
+    .main {
+
+        .container {
+            padding: 20px 0 105px;
+
+            .main_head {
+
+                & img:last-child {
+                    height: 210px;
+                }
+            }
+
+            .main_wrap {
+
+                .item {
+                    margin: 10px;
+                }
+            }
         }
     }
 }

@@ -101,7 +101,42 @@
         }
 
         .sliders {
-            margin-top: 35px;
+            margin-top: 25px;
+        }
+    }
+}
+
+@media all and (max-width:1280px) {
+
+    .main {
+
+        .container {
+            padding: 44px 0 115px;
+
+            .title {
+                padding: 30px;
+
+                .title_tekst {
+                    width: 603px;
+                }
+            }
+
+            .task, .process, .service {
+                margin-top: 120px;
+
+                .task_wrap, .process_wrap, .service_wrap {
+                    margin-top: 24px;
+
+                    .task_item {
+                        width: 307px;
+                        height: 204px;
+                    }
+
+                    .process_item {
+                        width: 308px;
+                    }
+                }
+            }
         }
     }
 }

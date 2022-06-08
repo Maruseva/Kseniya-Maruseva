@@ -68,3 +68,28 @@
         }
     }
 }
+
+@media all and (max-width:1280px) {
+
+    .main {
+
+        .container {
+            padding: 0 0 70px;
+
+            .main_head {
+
+                & img {
+                    height: 200px;
+                }
+            }
+
+            .main_wrap {
+                display: block;
+
+                .main_wrap_box {
+                    width: auto;
+                }
+            }
+        }
+    }
+}
