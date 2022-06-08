@@ -115,6 +115,7 @@
       .services .container .services_text .btn_small {
         background: none; }
     .services .container .services_items {
+      overflow-x: scroll;
       display: flex;
       justify-content: space-between;
       margin: 50px auto 25px; }

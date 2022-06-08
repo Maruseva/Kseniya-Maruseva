@@ -105,6 +105,7 @@ h2 {
 .item {
   width: 289px;
   height: 400px;
+  margin: 0 10px;
   background: #202020;
   border-radius: 3%;
   padding: 20px;
@@ -118,6 +119,7 @@ h2 {
           flex-direction: column;
   cursor: pointer; }
   .item .arrow {
+    width: 20px;
     position: relative;
     left: 232px; }
     .item .arrow img:first-child {
@@ -149,6 +151,7 @@ h2 {
 .case_item {
   width: 598px;
   height: 289px;
+  margin: 0 10px;
   background: #242424;
   border-radius: 8px;
   display: -webkit-box;
@@ -350,6 +353,9 @@ footer {
       width: 260px;
       height: 301px; }
 
+  header nav {
+    display: none; }
+
   .banner_text {
     margin: 60px 0; }
 
@@ -367,4 +373,53 @@ footer {
     margin-bottom: 14px; }
 
   .btn_big {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .search {
+    margin-bottom: 20px; }
+
+  .item {
+    width: 210px;
+    height: 291px;
+    padding: 15px; }
+    .item .arrow {
+      left: 162px; }
+    .item .services_img {
+      width: 106px;
+      margin: 13px auto 0; }
+    .item .link h4 {
+      font-size: 14px;
+      line-height: 165%; }
+    .item .link p {
+      display: none; }
+
+  .case_item {
+    width: 440px;
+    height: 248px; }
+    .case_item .case_logo {
+      width: 159px;
+      height: 248px; }
+      .case_item .case_logo img {
+        height: 21px; }
+    .case_item .case_partner {
+      width: 281px;
+      height: 248px;
+      padding: 15px; }
+
+  header .consultation {
+    display: none; }
+  header nav {
+    display: none; }
+
+  .banner .container {
+    display: block;
+    padding: 60px 0;
+    text-align: center; }
+    .banner .container .banner_text {
+      margin: 0;
+      width: auto; }
+      .banner .container .banner_text .btn_big {
+        margin-top: 41px;
+        background: #1B1B1B, url("../img/bgd_btn_big.svg"); }
+    .banner .container .banner_img {
+      display: none; } }

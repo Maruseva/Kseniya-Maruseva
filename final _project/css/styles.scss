@@ -183,6 +183,7 @@
         }
 
         .services_items {
+            overflow-x: scroll;
             display: flex;
             justify-content: space-between;
             margin: 50px auto 25px;
