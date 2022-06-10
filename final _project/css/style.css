@@ -90,7 +90,7 @@ h2 {
   position: relative;
   margin-bottom: 25px; }
   .search input {
-    width: 907px;
+    width: 100%;
     height: 56px;
     border-radius: 8px;
     border: none;
@@ -99,8 +99,8 @@ h2 {
     font-weight: 400; }
   .search img {
     position: absolute;
-    top: 16px;
-    right: 325px; }
+    left: calc(100% - 36px);
+    top: 16px; }
 
 .item {
   width: 289px;
@@ -329,11 +329,6 @@ footer {
 @media all and (max-width: 1280px) {
   .container {
     width: 1000px; }
-
-  .search input {
-    width: 990px; }
-  .search img {
-    right: 58px; }
 
   .item {
     width: 307px;

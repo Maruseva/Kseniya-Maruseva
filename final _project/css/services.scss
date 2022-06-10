@@ -51,3 +51,27 @@
         }
     }
 }
+
+@media all and (max-width:1024px) {
+    .main {
+
+        .container {
+            padding: 30px 0 70px;
+
+            .main_head {
+
+                & img:last-child {
+                    height: 125px;
+                }
+            }
+
+            .main_wrap {
+
+                .item {
+                    margin: 10px;
+                }
+            }
+        }
+    }
+
+}
