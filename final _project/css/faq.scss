@@ -93,3 +93,32 @@
         }
     }
 }
+
+@media all and (max-width:1024px) {
+
+    .main {
+
+        .container {
+            padding: 0 0 70px;
+
+            .main_head {
+
+                & img {
+                    height: 150px;
+                }
+            }
+
+            .main_wrap {
+                display: block;
+
+                .main_wrap_box {
+                    width: auto;
+
+                    .box_faq {
+                        font-size: $fs16;
+                    }
+                }
+            }
+        }
+    }
+}

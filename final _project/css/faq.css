@@ -66,3 +66,14 @@
       display: block; }
       .main .container .main_wrap .main_wrap_box {
         width: auto; } }
+@media all and (max-width: 1024px) {
+  .main .container {
+    padding: 0 0 70px; }
+    .main .container .main_head img {
+      height: 150px; }
+    .main .container .main_wrap {
+      display: block; }
+      .main .container .main_wrap .main_wrap_box {
+        width: auto; }
+        .main .container .main_wrap .main_wrap_box .box_faq {
+          font-size: 16px; } }

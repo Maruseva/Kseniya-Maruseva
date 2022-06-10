@@ -53,3 +53,18 @@
         }
     }
 }
+@media all and (max-width:1024px) {
+    .main {
+
+        .container {
+            padding: 10px 0 70px;
+
+            .main_head {
+
+                & img {
+                    height: 170px;
+                }
+            }
+        }
+    }
+}
