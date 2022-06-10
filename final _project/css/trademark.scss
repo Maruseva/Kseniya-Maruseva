@@ -103,6 +103,10 @@
         .sliders {
             margin-top: 25px;
         }
+
+        .btn_small.btn_adapt {
+            display: none;
+        }
     }
 }
 
@@ -137,6 +141,94 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media all and (max-width:1024px) {
+
+    .main {
+
+        .container {
+            padding: 33px 0 75px;
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                display: block;
+                padding: 20px;
+                text-align: center;
+
+                .title_tekst {
+                    width: 100%;
+
+                    & span {
+                        margin: 0 0 6px;
+                        font-size: 12px;
+                    }
+
+                    & p {
+                        margin-bottom: 28px;
+                    }
+                }
+
+                .btn_big::after {
+                    display: none;
+                }
+
+                & img {
+                    display: none;
+                }
+            }
+
+            .task, .process, .service {
+                margin-top: 80px;
+
+                .task_wrap, .process_wrap {
+                    margin-top: 6px;
+                    display: block;
+
+                    .task_item, .process_item {
+                        margin-top: 20px;
+                        padding: 15px;
+                        width: 100%;
+                        height: auto;
+
+                        & h4 {
+                            font-size: $fs16;
+                        }
+
+                        & p {
+                            font-weight: 400;
+                            font-size: $fs;
+                            line-height: 165%;
+                        }
+                    }
+                }
+            }
+
+            .service_title {
+                display: block;
+
+                .btn_small {
+                    display: none;
+                }
+            }
+
+            .service_wrap {
+                display: flex;
+                margin: 16px 0 15px;
+            }
+
+            .sliders {
+                margin: 0;
+            }
+
+            .btn_small.btn_adapt {
+                display: block;
+                margin-top: 21px;
+                align-self: center;
+            } 
         }
     }
 }

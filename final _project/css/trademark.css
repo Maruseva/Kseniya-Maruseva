@@ -82,6 +82,8 @@
                 justify-content: space-between; }
     .main .container .sliders {
       margin-top: 25px; }
+    .main .container .btn_small.btn_adapt {
+      display: none; }
 
 @media all and (max-width: 1280px) {
   .main .container {
@@ -99,3 +101,60 @@
           height: 204px; }
         .main .container .task .task_wrap .process_item, .main .container .task .process_wrap .process_item, .main .container .task .service_wrap .process_item, .main .container .process .task_wrap .process_item, .main .container .process .process_wrap .process_item, .main .container .process .service_wrap .process_item, .main .container .service .task_wrap .process_item, .main .container .service .process_wrap .process_item, .main .container .service .service_wrap .process_item {
           width: 308px; } }
+@media all and (max-width: 1024px) {
+  .main .container {
+    padding: 33px 0 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .main .container .title {
+      display: block;
+      padding: 20px;
+      text-align: center; }
+      .main .container .title .title_tekst {
+        width: 100%; }
+        .main .container .title .title_tekst span {
+          margin: 0 0 6px;
+          font-size: 12px; }
+        .main .container .title .title_tekst p {
+          margin-bottom: 28px; }
+      .main .container .title .btn_big::after {
+        display: none; }
+      .main .container .title img {
+        display: none; }
+    .main .container .task, .main .container .process, .main .container .service {
+      margin-top: 80px; }
+      .main .container .task .task_wrap, .main .container .task .process_wrap, .main .container .process .task_wrap, .main .container .process .process_wrap, .main .container .service .task_wrap, .main .container .service .process_wrap {
+        margin-top: 6px;
+        display: block; }
+        .main .container .task .task_wrap .task_item, .main .container .task .task_wrap .process_item, .main .container .task .process_wrap .task_item, .main .container .task .process_wrap .process_item, .main .container .process .task_wrap .task_item, .main .container .process .task_wrap .process_item, .main .container .process .process_wrap .task_item, .main .container .process .process_wrap .process_item, .main .container .service .task_wrap .task_item, .main .container .service .task_wrap .process_item, .main .container .service .process_wrap .task_item, .main .container .service .process_wrap .process_item {
+          margin-top: 20px;
+          padding: 15px;
+          width: 100%;
+          height: auto; }
+          .main .container .task .task_wrap .task_item h4, .main .container .task .task_wrap .process_item h4, .main .container .task .process_wrap .task_item h4, .main .container .task .process_wrap .process_item h4, .main .container .process .task_wrap .task_item h4, .main .container .process .task_wrap .process_item h4, .main .container .process .process_wrap .task_item h4, .main .container .process .process_wrap .process_item h4, .main .container .service .task_wrap .task_item h4, .main .container .service .task_wrap .process_item h4, .main .container .service .process_wrap .task_item h4, .main .container .service .process_wrap .process_item h4 {
+            font-size: 16px; }
+          .main .container .task .task_wrap .task_item p, .main .container .task .task_wrap .process_item p, .main .container .task .process_wrap .task_item p, .main .container .task .process_wrap .process_item p, .main .container .process .task_wrap .task_item p, .main .container .process .task_wrap .process_item p, .main .container .process .process_wrap .task_item p, .main .container .process .process_wrap .process_item p, .main .container .service .task_wrap .task_item p, .main .container .service .task_wrap .process_item p, .main .container .service .process_wrap .task_item p, .main .container .service .process_wrap .process_item p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 165%; }
+    .main .container .service_title {
+      display: block; }
+      .main .container .service_title .btn_small {
+        display: none; }
+    .main .container .service_wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 16px 0 15px; }
+    .main .container .sliders {
+      margin: 0; }
+    .main .container .btn_small.btn_adapt {
+      display: block;
+      margin-top: 21px;
+      -ms-flex-item-align: center;
+          align-self: center; } }
