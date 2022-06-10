@@ -7,7 +7,6 @@
     .wrap .container .head_page .title {
       margin-top: 109px; }
       .wrap .container .head_page .title p {
-        line-height: 160%;
         margin-bottom: 8px; }
       .wrap .container .head_page .title p:last-child {
         font-weight: 400;
@@ -112,13 +111,16 @@
     .services .container .services_text {
       display: flex;
       justify-content: space-between; }
+      .services .container .services_text p {
+        width: 633px; }
       .services .container .services_text .btn_small {
         background: none; }
     .services .container .services_items {
-      overflow-x: scroll;
       display: flex;
       justify-content: space-between;
       margin: 50px auto 25px; }
+    .services .container .btn_small.btn_adapt {
+      display: none; }
 
 .quiz {
   background: url("../img/bgd/bgd_red_big.png");
@@ -216,16 +218,22 @@
     .case .container .case_text {
       display: flex;
       justify-content: space-between; }
+      .case .container .case_text p {
+        width: 707px; }
     .case .container .case_wrap {
       margin: 50px 0 25px;
       display: flex;
       justify-content: space-between; }
+    .case .container .btn_small.btn_adapt {
+      display: none; }
 
 .team {
   background: url("../img/bgd/bgd_grey_big.png");
   background-size: cover; }
   .team .container {
     padding: 160px 0 142px; }
+    .team .container h2 + p {
+      width: 707px; }
     .team .container h2 {
       color: #1B1B1B; }
     .team .container .team_content {
@@ -290,27 +298,30 @@
               font-size: 14px;
               line-height: 140%;
               color: #5C5C5C; }
-        .team .container .forums .forums_info .forums_meeting, .team .container .forums .forums_info .forums_when {
+        .team .container .forums .forums_info .forums_meeting_when {
           display: flex;
-          flex-direction: column;
-          justify-content: center; }
-          .team .container .forums .forums_info .forums_meeting .forums_meeting_title, .team .container .forums .forums_info .forums_meeting .forums_meeting_date, .team .container .forums .forums_info .forums_when .forums_meeting_title, .team .container .forums .forums_info .forums_when .forums_meeting_date {
-            font-size: 18px;
-            color: #1B1B1B;
-            text-align: center; }
-          .team .container .forums .forums_info .forums_meeting .forums_meeting_about, .team .container .forums .forums_info .forums_meeting .forums_meeting_time, .team .container .forums .forums_info .forums_when .forums_meeting_about, .team .container .forums .forums_info .forums_when .forums_meeting_time {
-            font-weight: 400;
-            color: #5C5C5C; }
-          .team .container .forums .forums_info .forums_meeting .forums_meeting_title, .team .container .forums .forums_info .forums_when .forums_meeting_title {
-            border-bottom: 1px solid;
-            border-image: linear-gradient(to right, #DA4533, rgba(0, 0, 0, 0));
-            border-image-slice: 1; }
-        .team .container .forums .forums_info .forums_meeting {
-          width: 495px; }
-        .team .container .forums .forums_info .forums_when {
-          width: 197px;
-          align-items: center;
-          width: 146px; }
+          justify-content: space-between; }
+          .team .container .forums .forums_info .forums_meeting_when .forums_meeting, .team .container .forums .forums_info .forums_meeting_when .forums_when {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; }
+            .team .container .forums .forums_info .forums_meeting_when .forums_meeting .forums_meeting_title, .team .container .forums .forums_info .forums_meeting_when .forums_meeting .forums_meeting_date, .team .container .forums .forums_info .forums_meeting_when .forums_when .forums_meeting_title, .team .container .forums .forums_info .forums_meeting_when .forums_when .forums_meeting_date {
+              font-size: 18px;
+              color: #1B1B1B;
+              text-align: center; }
+            .team .container .forums .forums_info .forums_meeting_when .forums_meeting .forums_meeting_about, .team .container .forums .forums_info .forums_meeting_when .forums_meeting .forums_meeting_time, .team .container .forums .forums_info .forums_meeting_when .forums_when .forums_meeting_about, .team .container .forums .forums_info .forums_meeting_when .forums_when .forums_meeting_time {
+              font-weight: 400;
+              color: #5C5C5C; }
+            .team .container .forums .forums_info .forums_meeting_when .forums_meeting .forums_meeting_title, .team .container .forums .forums_info .forums_meeting_when .forums_when .forums_meeting_title {
+              border-bottom: 1px solid;
+              border-image: linear-gradient(to right, #DA4533, rgba(0, 0, 0, 0));
+              border-image-slice: 1; }
+          .team .container .forums .forums_info .forums_meeting_when .forums_meeting {
+            width: 495px; }
+          .team .container .forums .forums_info .forums_meeting_when .forums_when {
+            width: 197px;
+            align-items: center;
+            width: 146px; }
 
 @media all and (max-width: 1280px) {
   .wrap .container .head_page .title p {
@@ -396,5 +407,165 @@
         padding: 44px 0; }
         .team .container .forums .forums_info .forums_when {
           background: url("../img/bgd_circle.svg") center/115px no-repeat, url("../img/arrow.svg") center right no-repeat; } }
+@media all and (max-width: 1024px) {
+  .wrap .container {
+    padding: 67px 0 70px; }
+    .wrap .container .head_page {
+      display: block;
+      text-align: center; }
+      .wrap .container .head_page .title {
+        margin: 0; }
+        .wrap .container .head_page .title p {
+          margin: 0; }
+        .wrap .container .head_page .title p:last-child {
+          font-size: 16px; }
+        .wrap .container .head_page .title h1 {
+          font-size: 44px;
+          margin-bottom: 10px; }
+        .wrap .container .head_page .title .btn {
+          flex-direction: column;
+          margin-top: 20px; }
+          .wrap .container .head_page .title .btn .btn_big {
+            margin-bottom: 15px; }
+      .wrap .container .head_page .head_page_img {
+        display: none; }
+    .wrap .container .contant {
+      display: block;
+      margin-top: 75px; }
+      .wrap .container .contant .contant_img {
+        display: none; }
+      .wrap .container .contant .inner {
+        padding: 0; }
+        .wrap .container .contant .inner .about {
+          margin-bottom: 70px; }
+          .wrap .container .contant .inner .about .info {
+            margin-top: 30px;
+            height: 477px; }
+            .wrap .container .contant .inner .about .info .box {
+              width: 210px;
+              height: 139px;
+              padding: 15px; }
+              .wrap .container .contant .inner .about .info .box p {
+                font-size: 14px;
+                line-height: 165%; }
+                .wrap .container .contant .inner .about .info .box p span {
+                  font-size: 28px;
+                  line-height: 35px; }
+        .wrap .container .contant .inner .partners {
+          margin: 0; }
+          .wrap .container .contant .inner .partners .partners_logo {
+            display: block;
+            height: auto; }
+            .wrap .container .contant .inner .partners .partners_logo .logo {
+              height: 108px;
+              width: 100%;
+              vertical-align: middle; }
+              .wrap .container .contant .inner .partners .partners_logo .logo img {
+                width: 41%; }
+
+  .services .container {
+    padding: 80px 0 75px;
+    display: flex;
+    flex-direction: column; }
+    .services .container h2 {
+      margin-bottom: 19px; }
+    .services .container .services_text {
+      display: block; }
+      .services .container .services_text p {
+        width: 480px; }
+      .services .container .services_text .btn_small {
+        display: none; }
+    .services .container .services_items {
+      margin: 40px auto 25px; }
+    .services .container .btn_small.btn_adapt {
+      margin-top: 30px;
+      display: block;
+      background: none;
+      align-self: center; }
+
+  .quiz .container {
+    padding: 80px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .quiz .container h2, .quiz .container h3, .quiz .container p {
+      display: none; }
+    .quiz .container .adapt .questions {
+      margin: 0;
+      width: 439px;
+      padding: 20px;
+      border-radius: 0%; }
+      .quiz .container .adapt .questions h3, .quiz .container .adapt .questions p {
+        display: inline-block; }
+      .quiz .container .adapt .questions .questions_wrap {
+        display: block;
+        height: fit-content; }
+        .quiz .container .adapt .questions .questions_wrap .questions_items {
+          margin: 7.5px auto;
+          width: 399px; }
+    .quiz .container .adapt .img_wrap {
+      display: block; }
+      .quiz .container .adapt .img_wrap img:first-child {
+        height: 125px;
+        top: -107px;
+        right: 129px; }
+      .quiz .container .adapt .img_wrap img:last-child {
+        height: 127px;
+        top: -139px;
+        right: 124px; }
+    .quiz .container .quiz_bonus {
+      margin-top: 35px; }
+      .quiz .container .quiz_bonus .bonus {
+        border-radius: 0%;
+        width: 439px;
+        margin: 0; }
+        .quiz .container .quiz_bonus .bonus p {
+          display: inline; }
+      .quiz .container .quiz_bonus .bonus:last-child {
+        display: none; }
+
+  .case .container {
+    padding: 80px 0 75px;
+    display: flex;
+    flex-direction: column; }
+    .case .container .case_text p {
+      width: 100%; }
+    .case .container .case_text .btn_small {
+      display: none; }
+    .case .container .case_wrap {
+      margin: 40px 0 25px; }
+    .case .container .btn_small.btn_adapt {
+      margin-top: 30px;
+      display: block;
+      background: none;
+      align-self: center; }
+
+  .team .container {
+    padding: 80px 0 21px; }
+    .team .container h2 + p {
+      width: 100%; }
+    .team .container .team_content {
+      margin: 40px 0 15px; }
+      .team .container .team_content .team_item {
+        width: 210px; }
+        .team .container .team_content .team_item img {
+          height: 233px;
+          width: 210px; }
+    .team .container .forums {
+      margin-top: 35px; }
+      .team .container .forums .forums_title h3 {
+        font-size: 22px; }
+      .team .container .forums .forums_title .forum_title_wrap a:last-child {
+        margin-left: 26px; }
+      .team .container .forums .forums_info {
+        display: block;
+        padding: 20px 0 31px; }
+        .team .container .forums .forums_info .forums_personal_data {
+          margin-bottom: 15px; }
+        .team .container .forums .forums_info .forums_meeting_when .forums_meeting {
+          width: 270px; }
+          .team .container .forums .forums_info .forums_meeting_when .forums_meeting .forums_meeting_title {
+            text-align: start; } }
 
 /*# sourceMappingURL=styles.css.map */
