@@ -159,8 +159,9 @@ h2 {
     .link {
         margin-top: auto;
     
-        & h4 {
+        & a {
             font-size: $fs18;
+            color: $grey;
         }
 
         & p {
@@ -183,7 +184,7 @@ h2 {
         opacity: 0.7;
     }    
 
-    & h4 {
+    & a {
         color: $white;
     }
     & p {
@@ -226,8 +227,8 @@ h2 {
             right: 10px;
         }
 
-        .case_partner_name {
-            color: $white_bgd;
+        & a {
+            color: $white;
         }
 
         .case_partner_task {
@@ -503,7 +504,7 @@ footer {
 
         .link {
 
-            & h4 {
+            & a {
                 font-size: $fs;
                 line-height: 165%;
             }

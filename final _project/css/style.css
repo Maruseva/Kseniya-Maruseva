@@ -130,8 +130,9 @@ h2 {
     margin: 38px auto 0; }
   .item .link {
     margin-top: auto; }
-    .item .link h4 {
-      font-size: 18px; }
+    .item .link a {
+      font-size: 18px;
+      color: #8A8A8A; }
     .item .link p {
       font-weight: 400;
       font-size: 14px;
@@ -143,7 +144,7 @@ h2 {
 .item:hover .services_img {
   width: 130px;
   opacity: 0.7; }
-.item:hover h4 {
+.item:hover a {
   color: #FFFFFF; }
 .item:hover p {
   display: inline; }
@@ -191,8 +192,8 @@ h2 {
       position: absolute;
       top: 10px;
       right: 10px; }
-    .case_item .case_partner .case_partner_name {
-      color: #F9F9F9; }
+    .case_item .case_partner a {
+      color: #FFFFFF; }
     .case_item .case_partner .case_partner_task {
       font-weight: 400;
       font-size: 14px;
@@ -396,7 +397,7 @@ footer {
     .item .services_img {
       width: 106px;
       margin: 13px auto 0; }
-    .item .link h4 {
+    .item .link a {
       font-size: 14px;
       line-height: 165%; }
     .item .link p {
