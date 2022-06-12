@@ -79,7 +79,8 @@ h2 {
     margin-right: 15px; }
   .breadcrumbs a {
     font-weight: 400;
-    margin: 0 5px; }
+    margin: 0 5px;
+    color: #FFFFFF; }
   .breadcrumbs a::after {
     content: " > "; }
   .breadcrumbs a:last-child {
@@ -182,7 +183,6 @@ h2 {
         -ms-flex-align: center;
             align-items: center; }
   .case_item .case_partner {
-    width: 309px;
     height: 289px;
     padding: 20px;
     display: -webkit-box;
@@ -222,7 +222,8 @@ header {
         -ms-flex-align: center;
             align-items: center; }
     header .container img {
-      height: 29px; }
+      height: 29px;
+      cursor: pointer; }
     header .container .consultation a:first-child {
       font-size: 18px;
       line-height: 22px;
@@ -233,6 +234,57 @@ header {
     header .container nav a {
       color: #FFFFFF;
       margin-left: 30px; }
+    header .container button {
+      border: none;
+      background: #202020;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none; }
+      header .container button img {
+        height: 46px; }
+  header #menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100vh;
+    background: #1B1B1B;
+    z-index: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+    visibility: hidden; }
+    header #menu #close {
+      height: 46px;
+      position: absolute;
+      background: #1B1B1B;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      border-radius: 5px; }
+    header #menu .bgd {
+      width: 16%;
+      background: #5C5C5C; }
+    header #menu .menu_wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      header #menu .menu_wrap p {
+        color: #8A8A8A; }
+      header #menu .menu_wrap nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        header #menu .menu_wrap nav a {
+          color: #FFFFFF; }
+        header #menu .menu_wrap nav p {
+          color: #5C5C5C; }
 
 .banner {
   background: url("../img/bgd/bgd_red_small.png");
@@ -353,11 +405,12 @@ footer {
       .case_item .case_logo img {
         height: 26px; }
     .case_item .case_partner {
-      width: 260px;
       height: 301px; }
 
-  header nav {
+  header .container nav {
     display: none; }
+  header .container button {
+    display: block; }
 
   .banner_text {
     margin: 60px 0; }
@@ -420,7 +473,6 @@ footer {
       .case_item .case_logo img {
         height: 21px; }
     .case_item .case_partner {
-      width: 281px;
       height: 248px;
       padding: 15px; }
       .case_item .case_partner img {
@@ -428,10 +480,12 @@ footer {
         bottom: calc(100% - 33px);
         left: calc(100% - 33px); }
 
-  header .consultation {
+  header .container .consultation {
     display: none; }
-  header nav {
+  header .container nav {
     display: none; }
+  header .container button {
+    display: block; }
 
   .banner .container {
     display: block;

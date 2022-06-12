@@ -93,6 +93,7 @@ h2 {
     & a {
         font-weight: 400;
         margin: 0 5px;
+        color: $white;
     }
 
     & a::after {
@@ -216,7 +217,6 @@ h2 {
     }
 
     .case_partner {
-        width: 309px;
         height: 289px;
         padding: 20px;
         display: flex;
@@ -257,6 +257,7 @@ header {
 
         img {
             height: 29px;
+            cursor: pointer;
         }
 
         .consultation {
@@ -275,6 +276,72 @@ header {
         nav a {
             color: $white;
             margin-left: 30px;
+        }
+
+        button {
+            border: none;
+            background: $bgd_box;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+
+            img {
+                height: 46px;
+            }
+        }  
+    }
+
+    #menu {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100vh;
+        background: $black;
+        z-index: 1;
+        transition: 1s;
+        visibility: hidden;
+
+        #close {
+            height: 46px;
+            position: absolute;
+            background: $black;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+
+        }
+
+
+        .bgd {
+            width: 16%;
+            background: $dark_grey;
+        }
+
+        .menu_wrap {
+            display: flex;
+
+            & p {
+                color: $grey;
+            }
+
+            & nav {
+                display: flex;
+                flex-direction: column;
+
+                & a {
+                    color: $white;
+                }
+
+                & p {
+                    color: $dark_grey;
+                }
+            }
+
+
+            
         }
     }
 }
@@ -423,17 +490,23 @@ footer {
         }
 
         .case_partner {
-            width: 260px;
             height: 301px;
         }
     }
 
      //header
 
-     header {
+    header {
 
-        & nav {
-            display: none;
+        .container {
+
+            & nav {
+                display: none;
+            }
+    
+            & button {
+                display: block;
+            }
         }
     }
 
@@ -529,7 +602,6 @@ footer {
         }
 
         .case_partner {
-            width: 281px;
             height: 248px;
             padding: 15px;
 
@@ -545,13 +617,20 @@ footer {
 
     header {
 
-        .consultation {
-            display: none;
-        }
+        .container {
 
-        & nav {
-            display: none;
-        }
+            .consultation {
+                display: none;
+            }
+    
+            & nav {
+                display: none;
+            }
+    
+            & button {
+                display: block;
+            }
+        }  
     }
 
     // section banner
