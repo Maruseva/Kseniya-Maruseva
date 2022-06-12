@@ -117,7 +117,9 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s; }
   .item .arrow {
     width: 20px;
     position: relative;
