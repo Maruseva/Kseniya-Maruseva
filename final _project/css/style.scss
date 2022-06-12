@@ -90,20 +90,20 @@ h2 {
         margin-right: 15px;
     }
 
-    & p {
+    & a {
         font-weight: 400;
         margin: 0 5px;
     }
 
-    & p::after {
+    & a::after {
         content: " > ";
     }
 
-    & p:last-child {
+    & a:last-child {
         color: $red;
     }
 
-    & p:last-child::after {
+    & a:last-child::after {
         content: "";
     }
 }
@@ -204,7 +204,9 @@ h2 {
     cursor: pointer;
 
     .case_logo {
-        width: 289px;
+        flex-basis: 289px;
+        flex-grow: 0;
+        flex-shrink: 0;
         height: 289px;
         background: $bgd_case_logo;
         border-radius: 8px 0 0 8px;
@@ -412,7 +414,7 @@ footer {
         height: 301px;
 
         .case_logo {
-            width: 210px;
+            flex-basis: 210px;
             height: 301px;
             
             & img {
@@ -518,7 +520,7 @@ footer {
         height: 248px;
 
         .case_logo {
-            width: 159px;
+            flex-basis: 159px;
             height: 248px;
 
             & img {
