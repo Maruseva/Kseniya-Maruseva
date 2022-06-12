@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <title>IPhab</title>
     
 </head>
@@ -151,21 +152,22 @@
                         <a href="#">Программы для ЭВМ и Базы данных</a>
                         <p>Государственная регистрация торговых знаков в РФ и в мире</p>
                     </div>
-                    <div class="item">
-                        <div class="arrow">
-                            <img src="img/arrow_item_grey.svg" alt="arrow">
-                            <img src="img/arrow_item_white.svg" alt="arrow">
-                        </div>
-                        <img class="services_img" src="img/pictures/servic6.png" alt="image" title="Получение дубликата свидетельства">
-                        <div class="link">
-                            <a href="#">Получение дубликата свидетельства</a>
-                            <p>Государственная регистрация торговых знаков в РФ и в мире</p>
-                        </div>
                 </div>
-            </div>
-            <div class="sliders">
-                <img src="img/slider_l.svg" alt="back">
-                <img src="img/slider_r.svg" alt="next">
+                <div class="item">
+                    <div class="arrow">
+                        <img src="img/arrow_item_grey.svg" alt="arrow">
+                        <img src="img/arrow_item_white.svg" alt="arrow">
+                    </div>
+                    <img class="services_img" src="img/pictures/servic6.png" alt="image" title="Получение дубликата свидетельства">
+                    <div class="link">
+                        <a href="#">Получение дубликата свидетельства</a>
+                        <p>Государственная регистрация торговых знаков в РФ и в мире</p>
+                    </div>
+                </div>   
+            </div> 
+            <div class="sliders item_controls">
+                <img src="img/slider_l.svg" alt="back" data-controls="prev">
+                <img src="img/slider_r.svg" alt="next" data-controls="next">
             </div>
             <button class="btn_small btn_adapt" type="submit" onclick="GoUrl('cases.html')">Все услуги</button>
         </div>
@@ -251,10 +253,20 @@
                         <p class="case_partner_task">Защита прав после ребрендинга. Как пройти усешную регистрацию</p>
                     </div>
                 </div>
+                <!-- <div class="case_item">
+                    <div class="case_logo">
+                        <img src="img/logo/case_logo3.png" alt="HANDS" title="HANDS">
+                    </div>
+                    <div class="case_partner">
+                        <img src="img/arrow_item_grey.svg" alt="arrow">
+                        <a href="#">HANDS — производитель строительных материалов</a>
+                        <p class="case_partner_task">Предварительный отказ — не приговор! Как мы защищали монополию российского производителя строительных материалов</p>
+                    </div>
+                </div> -->
             </div>
-            <div class="sliders">
-                <img src="img/slider_l.svg" alt="back">
-                <img src="img/slider_r.svg" alt="next">
+            <div class="sliders case_controls">
+                <img src="img/slider_l.svg" alt="back" data-controls="prev">
+                <img src="img/slider_r.svg" alt="next" data-controls="next">
             </div>
             <button class="btn_small btn_adapt" type="submit" onclick="GoUrl('cases.html')">Все кейсы</button>
         </div>
@@ -285,10 +297,15 @@
                         <p class="team_name">Пахоменко Алина <br> Аликовна</p>
                         <p class="team_function">Адвокат</p>
                     </div>
+                    <div class="team_item">
+                        <img src="img/team_foto/team_foto5.jpeg" alt="foto" title="Осоргина Екатерина Александровна">
+                        <p class="team_name">Осоргина Екатерина <br> Александровна</p>
+                        <p class="team_function">Патентный поверенный РФ</p>
+                    </div>
                 </div>
-                <div class="sliders">
-                    <img src="img/slider_l.svg" alt="back">
-                    <img src="img/slider_r.svg" alt="next">
+                <div class="sliders team_controls">
+                    <img src="img/slider_l.svg" alt="back" data-controls="prev">
+                    <img src="img/slider_r.svg" alt="next" data-controls="next">
                 </div>
             </div>
             <div class="forums">
@@ -394,6 +411,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

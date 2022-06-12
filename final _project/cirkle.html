@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cirkle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <title>CIRCLE | IPhab</title>
 </head>
 <body>
@@ -73,10 +74,15 @@
                                 <source media="(max-width:1280px)" srcset="img/cirkle/cirkle_1024_4.jpeg">
                                 <img src="img/cirkle/cirkle4.jpeg" alt="cirkle" style="width: auto;">
                             </picture>
+                            <picture>
+                                <source media="(max-width:1024px)" srcset="img/cirkle/cirkle_480_3.jpeg">
+                                <source media="(max-width:1280px)" srcset="img/cirkle/cirkle_1024_3.jpeg">
+                                <img src="img/cirkle/cirkle3.jpeg" alt="cirkle" style="width: auto;">
+                            </picture>
                         </div>
-                        <div class="sliders">
-                            <img src="img/slider_l.svg" alt="back">
-                            <img src="img/slider_r.svg" alt="next">
+                        <div class="sliders foto_controls">
+                            <img src="img/slider_l.svg" alt="back" data-controls="prev">
+                            <img src="img/slider_r.svg" alt="next" data-controls="next">
                         </div>
                     </div>
                 </div>
@@ -104,10 +110,15 @@
                             <source media="(max-width:1280px)" srcset="img/cirkle/patent_1024.jpeg">
                             <img src="img/cirkle/patent1.jpeg" alt="patent" style="width: auto;">
                         </picture>
+                        <picture>
+                            <source media="(max-width:1024px)" srcset="img/cirkle/patent_480.jpeg">
+                            <source media="(max-width:1280px)" srcset="img/cirkle/patent_1024.jpeg">
+                            <img src="img/cirkle/patent1.jpeg" alt="patent" style="width: auto;">
+                        </picture>
                     </div>
                     <div class="sliders">
-                        <img src="img/slider_l.svg" alt="back">
-                        <img src="img/slider_r.svg" alt="next">
+                        <img src="img/slider_l.svg" alt="back" data-controls="prev">
+                        <img src="img/slider_r.svg" alt="next" data-controls="next">
                     </div>
                 </div>
             </div>
@@ -138,8 +149,8 @@
                 </div>
             </div>
             <div class="sliders btn_adapt">
-                <img src="img/slider_l.svg" alt="back">
-                <img src="img/slider_r.svg" alt="next">
+                <img src="img/slider_l.svg" alt="back" data-controls="prev">
+                <img src="img/slider_r.svg" alt="next" data-controls="next">
             </div>
         </div>
     </section>
@@ -197,6 +208,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
