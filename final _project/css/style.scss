@@ -85,15 +85,23 @@ h2 {
 .breadcrumbs {
     display: flex;
 
-    & img {
-        height: 28px;
+    #back {
         margin-right: 15px;
+        cursor: pointer;
+        background: $black;
+        border: none;
+
+        & img {
+        height: 28px;
+
+        }
     }
 
     & a {
         font-weight: 400;
         margin: 0 5px;
         color: $white;
+        white-space: nowrap;
     }
 
     & a::after {
@@ -102,6 +110,8 @@ h2 {
 
     & a:last-child {
         color: $red;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     & a:last-child::after {
@@ -295,25 +305,25 @@ header {
         display: flex;
         position: fixed;
         top: 0;
-        left: 0;
-        width: 0;
+        left: -100vw;
+        width: 100vw;
         height: 100vh;
         background: $black;
         z-index: 1;
         transition: 1s;
-        visibility: hidden;
+        opacity: 0;
+
 
         #close {
             height: 46px;
             position: absolute;
             background: $black;
+            border: none;
             top: 20px;
             right: 20px;
             cursor: pointer;
             border-radius: 5px;
-
         }
-
 
         .bgd {
             width: 16%;
@@ -322,10 +332,9 @@ header {
 
         .menu_wrap {
             display: flex;
-
-            & p {
-                color: $grey;
-            }
+            justify-content: space-around;
+            margin-top: 70px;
+            width: 100%;
 
             & nav {
                 display: flex;
@@ -340,8 +349,65 @@ header {
                 }
             }
 
+            .menu_nav {
 
-            
+                & a {
+                    font-size: $fs34;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .menu_contacts {
+                position: relative;
+
+                & nav {
+                    margin-bottom: 35px;
+
+                    & p {
+                        font-size: $fs18;
+                        margin-bottom: 20px;
+                    }
+
+                    & a {
+                        margin-bottom: 15px;
+                    }
+                }
+
+                & nav:last-child {
+                    margin-bottom: 5px;
+                }
+
+                .menu_address {
+                    margin-bottom: 216px;
+
+                    & p {
+                        color: $grey;
+                        font-weight: 400;
+                        font-size: $fs;
+                        line-height: 165%;
+                        margin-bottom: 10px;
+                        max-width: 257px;
+                    }
+                }
+
+                .menu_img {
+                    position: relative;
+    
+                    & img:first-child {
+                        height: 387px;
+                        opacity: 0.1;
+                        
+                    }
+    
+                    & img:last-child {
+                        height: 400px;
+                        position: absolute;
+                        bottom: 67px;
+                        left: 5px;
+                        filter: drop-shadow(-60px 60px 12px rgba(0, 0, 0, 0.2))
+                    }
+                }
+            }   
         }
     }
 }
@@ -631,6 +697,47 @@ footer {
                 display: block;
             }
         }  
+
+        #menu {
+
+            .bgd {
+                width: 23%;
+            }
+
+            .menu_wrap {
+                display: block;
+                margin-top: 65px;
+                padding-left: 50px;
+
+                .menu_nav {
+
+                    & a {
+                        font-size: $fs28;
+                        margin-bottom: 24px;
+                    }
+                }
+
+                .menu_contacts {
+                    padding-top: 30px;
+
+                    & nav {
+                        margin-bottom: 25px;
+                    }
+
+                    & nav:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .menu_address {
+                        margin-bottom: 256px;
+                    }
+
+                    .menu_img {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 
     // section banner
