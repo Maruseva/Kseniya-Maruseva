@@ -797,6 +797,7 @@
                             .logo {
                                 height: 108px;
                                 width: 100%;
+                                margin: 10px 0; 
                                 vertical-align: middle;
     
                                 & img {
@@ -865,6 +866,8 @@
             }
 
             .adapt {
+                display: block;
+                position: relative;
 
                 .questions {
                     margin: 0;
@@ -892,14 +895,14 @@
 
                     & img:first-child {
                         height: 125px;
-                        top: -107px;
-                        right: 129px;
+                        top: -788px;
+                        right: -328px;
                     }
 
                     & img:last-child {
                         height: 127px;
-                        top: -139px;
-                        right: 124px;
+                        top: -803px;
+                        right: 21px;
                     }
                 }
             }
