@@ -218,6 +218,7 @@ h2 {
     border-radius: 8px;
     display: flex !important;
     cursor: pointer;
+    position: relative;
 
     .case_logo {
         flex-basis: 289px;
@@ -237,9 +238,7 @@ h2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        position: relative;
-
-
+        
         & img {
             position: absolute;
             bottom: calc(100% - 38px);
@@ -916,7 +915,7 @@ footer {
 
         .case_logo {
             width: 320px;
-            height: 100px;
+            flex-basis: 100px;
             border-radius: 8px 8px 0 0;
 
             & img {
@@ -927,10 +926,6 @@ footer {
         .case_partner {
             height: 220px;
             padding: 15px;
-
-            & img {
-                bottom: calc(100% - -124px);  
-            }
         }
     }
 

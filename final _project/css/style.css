@@ -173,7 +173,8 @@ h2 {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
   .case_item .case_logo {
     -ms-flex-preferred-size: 289px;
         flex-basis: 289px;
@@ -206,8 +207,7 @@ h2 {
             flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    position: relative; }
+            justify-content: center; }
     .case_item .case_partner img {
       position: absolute;
       bottom: calc(100% - 38px);
@@ -668,15 +668,14 @@ footer {
             flex-direction: column; }
     .case_item .case_logo {
       width: 320px;
-      height: 100px;
+      -ms-flex-preferred-size: 100px;
+          flex-basis: 100px;
       border-radius: 8px 8px 0 0; }
       .case_item .case_logo img {
         height: 23px; }
     .case_item .case_partner {
       height: 220px;
       padding: 15px; }
-      .case_item .case_partner img {
-        bottom: calc(100% - -124px); }
 
   header #menu .bgd {
     width: 11%; }
