@@ -1,6 +1,6 @@
 var slider = tns({
     container: '.services_items',
-    items: 2,
+    items: 1,
     slideBy: 'page',
     autoplay: true,
     nav: false,    
@@ -9,6 +9,9 @@ var slider = tns({
     mouseDrag: true,
     controlsContainer: '.item_controls',
     responsive: {
+        492: {
+            items: 2,
+        },
         1024: {
             items: 3,
         },
@@ -37,7 +40,7 @@ var slider = tns({
 
   var slider = tns({
     container: '.team_content',
-    items: 2,
+    items: 1,
     slideBy: 'page',
     autoplay: true,
     nav: false,    
@@ -46,6 +49,9 @@ var slider = tns({
     mouseDrag: true,
     controlsContainer: '.team_controls',
     responsive: {
+        492: {
+            items: 2,
+        },
         1024: {
             items: 3,
         },

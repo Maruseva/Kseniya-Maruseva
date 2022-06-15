@@ -96,6 +96,7 @@
             .wrap .container .contant .inner .about .info .box p {
               font-weight: 400; }
               .wrap .container .contant .inner .about .info .box p span {
+                font-weight: 500;
                 font-family: 'STIX Two Text';
                 font-size: 36px;
                 line-height: 45px;
@@ -609,24 +610,14 @@
 
   .quiz .container {
     padding: 80px 0;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    position: relative; }
     .quiz .container h2, .quiz .container h3, .quiz .container p {
       display: none; }
     .quiz .container .adapt {
       display: block;
       position: relative; }
       .quiz .container .adapt .questions {
-        margin: 0;
+        margin: 0 auto;
         width: 439px;
         padding: 20px;
         border-radius: 0%; }
@@ -641,7 +632,8 @@
             margin: 7.5px auto;
             width: 399px; }
       .quiz .container .adapt .img_wrap {
-        display: block; }
+        display: block;
+        height: 0; }
         .quiz .container .adapt .img_wrap img:first-child {
           height: 125px;
           top: -788px;
@@ -655,7 +647,7 @@
       .quiz .container .quiz_bonus .bonus {
         border-radius: 0%;
         width: 439px;
-        margin: 0; }
+        margin: 0 auto; }
         .quiz .container .quiz_bonus .bonus p {
           display: inline; }
       .quiz .container .quiz_bonus .bonus:last-child {
@@ -709,3 +701,126 @@
           width: 270px; }
           .team .container .forums .forums_info .forums_meeting_when .forums_meeting .forums_meeting_title {
             text-align: start; } }
+@media all and (max-width: 492px) {
+  .wrap .container {
+    padding: 40px 0 50px; }
+    .wrap .container .head_page .title p {
+      font-size: 14px; }
+    .wrap .container .head_page .title h1 {
+      font-size: 34px;
+      margin-bottom: 10px; }
+    .wrap .container .head_page .title .btn {
+      margin-top: 15px; }
+      .wrap .container .head_page .title .btn .btn_big {
+        margin-bottom: 10px; }
+    .wrap .container .contant {
+      margin-top: 55px; }
+      .wrap .container .contant .inner {
+        padding: 0; }
+        .wrap .container .contant .inner .about {
+          margin-bottom: 50px; }
+          .wrap .container .contant .inner .about .info {
+            margin-top: 25px;
+            display: block;
+            height: auto; }
+            .wrap .container .contant .inner .about .info .box {
+              width: 100%;
+              height: -webkit-fit-content;
+              height: -moz-fit-content;
+              height: fit-content;
+              margin: 7px 0; }
+              .wrap .container .contant .inner .about .info .box p span {
+                font-size: 24px;
+                line-height: 30px;
+                margin-right: 20px; }
+        .wrap .container .contant .inner .partners .partners_logo {
+          margin-top: 29px; }
+
+  .services .container {
+    padding: 60px 0 55px; }
+    .services .container h2 {
+      margin-bottom: 12px; }
+    .services .container .services_text p {
+      width: 100%; }
+    .services .container .services_items {
+      margin: 35px auto 25px; }
+    .services .container .btn_small.btn_adapt {
+      margin-top: 25px; }
+
+  .quiz .container {
+    padding: 60px 0; }
+    .quiz .container .adapt .questions {
+      margin: 0 auto;
+      width: 100%;
+      padding: 15px; }
+      .quiz .container .adapt .questions h3 {
+        font-weight: 400;
+        font-size: 20px; }
+      .quiz .container .adapt .questions p {
+        font-weight: 400;
+        font-size: 16px; }
+      .quiz .container .adapt .questions .questions_wrap .questions_items {
+        margin: 7.5px auto;
+        width: 100%; }
+    .quiz .container .adapt .img_wrap img:first-child {
+      height: 105px;
+      top: -808px;
+      right: -225px; }
+    .quiz .container .adapt .img_wrap img:last-child {
+      height: 105px;
+      top: -819px;
+      right: -11px; }
+    .quiz .container .quiz_bonus {
+      margin-top: 25px; }
+      .quiz .container .quiz_bonus .bonus {
+        width: 100%; }
+
+  .case .container {
+    padding: 70px 0 55px; }
+    .case .container .case_wrap {
+      margin: 35px 0 20px; }
+    .case .container .btn_small.btn_adapt {
+      margin-top: 25px; }
+
+  .team .container {
+    padding: 60px 0 40px; }
+    .team .container h2 + p {
+      width: 100%; }
+    .team .container .team_content {
+      margin: 25px 0 20px; }
+      .team .container .team_content .team_item {
+        width: 100%; }
+        .team .container .team_content .team_item img {
+          height: 355px;
+          width: 320px; }
+        .team .container .team_content .team_item .team_name {
+          font-size: 16px; }
+          .team .container .team_content .team_item .team_name br {
+            display: none; }
+    .team .container .forums {
+      margin-top: 30px; }
+      .team .container .forums .forums_title {
+        display: block; }
+        .team .container .forums .forums_title h3 {
+          font-size: 20px;
+          margin-bottom: 16px; }
+      .team .container .forums .forums_info {
+        display: block;
+        padding: 20px 0 31px; }
+        .team .container .forums .forums_info .forums_personal_data {
+          margin-bottom: 0;
+          width: 100%; }
+          .team .container .forums .forums_info .forums_personal_data img {
+            height: 80px;
+            width: 80px;
+            -ms-flex-item-align: center;
+                align-self: center; }
+        .team .container .forums .forums_info .forums_meeting_when {
+          display: block; }
+          .team .container .forums .forums_info .forums_meeting_when .forums_meeting {
+            width: 100%;
+            margin-bottom: 20px; }
+            .team .container .forums .forums_info .forums_meeting_when .forums_meeting .forums_meeting_about {
+              font-size: 14px; }
+          .team .container .forums .forums_info .forums_meeting_when .forums_when {
+            height: 115px; } }

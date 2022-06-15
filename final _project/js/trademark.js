@@ -1,6 +1,6 @@
 var slider = tns({
     container: '.service_wrap',
-    items: 2,
+    items: 1,
     slideBy: 'page',
     autoplay: true,
     nav: false,    
@@ -9,6 +9,9 @@ var slider = tns({
     mouseDrag: true,
     controlsContainer: '.service_controls',
     responsive: {
+        492: {
+            items: 2,
+        },
         1024: {
             items: 3,
         },

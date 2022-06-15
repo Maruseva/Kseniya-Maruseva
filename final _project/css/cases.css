@@ -43,3 +43,10 @@
     padding: 10px 0 70px; }
     .main .container .main_head img {
       height: 170px; } }
+@media all and (max-width: 492px) {
+  .main .container {
+    padding: 28.5px 0 50px; }
+    .main .container .main_head h2 {
+      margin: 30px 0; }
+    .main .container .main_head img[src*=".png"] {
+      display: none; } }

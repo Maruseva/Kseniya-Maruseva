@@ -214,3 +214,47 @@
         }
     }
 }
+
+@media all and (max-width:496px) {
+
+    .main {
+
+        .container {
+            padding: 28.5px 0 55px;
+
+            .title {
+                padding: 15px;
+
+                .title_tekst {
+
+                    & span {
+                        margin-bottom: 5px auto;
+                        line-height: 165%;
+                    }
+                }
+            }
+
+            .main_wrap {
+
+                .about {
+                    margin-top: 35px;
+
+                    & h3 {
+                        font-size: $fs16;
+                    }
+
+                    & p {
+                        line-height: 165%;
+                    }
+                }
+
+                .about_wrap {
+
+                    & img[src*="2.jpeg"] {
+                        margin-top: 20px;;
+                    }
+                }
+            }
+        }
+    }
+}

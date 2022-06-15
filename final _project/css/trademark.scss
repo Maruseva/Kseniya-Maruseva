@@ -232,3 +232,50 @@
         }
     }
 }
+
+@media all and (max-width:492px) {
+
+    .main {
+
+        .container {
+            padding: 28px 0 55px;
+
+            .title {
+                padding: 20px 11px;
+
+                .title_tekst {
+
+                    & p {
+                        font-size: $fs;
+                        line-height: 165%;
+                    }
+                }
+
+                .btn_big::after {
+                    display: inline;
+                }
+            }
+
+            .task, .process, .service {
+                margin-top: 60px;
+
+                .task_wrap, .process_wrap {
+                    margin-top: 8px;
+
+                    .task_item, .process_item {
+                        margin-top: 15px;
+                    }
+                }
+            }
+
+            .service_wrap {
+                display: flex;
+                margin: 11px 0 10px;
+            }
+
+            .btn_small.btn_adapt {
+                margin-top: 26px;
+            } 
+        }
+    }
+}

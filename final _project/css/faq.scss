@@ -122,3 +122,38 @@
         }
     }
 }
+
+@media all and (max-width:492px) {
+
+    .main {
+
+        .container {
+            padding: 28.5px 0 50px;
+
+            .main_head {
+
+                & h2 {
+                    margin: 30px 0;
+                }
+
+                & img[src*=".png"] {
+                    display: none;
+                }
+            }
+
+            .main_wrap {
+
+                .main_wrap_box {
+
+                    .box_faq {
+                        font-size: $fs;
+                    }
+
+                    .answer {
+                        font-size: $fs;
+                    }
+                }
+            }
+        }
+    }
+}

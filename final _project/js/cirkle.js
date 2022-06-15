@@ -1,6 +1,6 @@
 var slider = tns({
     container: '.wrap_img',
-    items: 2,
+    items: 1,
     slideBy: 'page',
     autoplay: true,
     nav: false,    
@@ -8,11 +8,16 @@ var slider = tns({
     autoplayButtonOutput: false,
     mouseDrag: true,
     controlsContainer: '.foto_controls',
+    responsive: {
+      492: {
+          items: 2,
+      }
+    }
   });
 
   var slider = tns({
     container: '.patent',
-    items: 2,
+    items: 1,
     slideBy: 'page',
     autoplay: true,
     nav: false,    
@@ -20,6 +25,11 @@ var slider = tns({
     autoplayButtonOutput: false,
     mouseDrag: true,
     controlsContainer: '.patent_controls',
+    responsive: {
+      492: {
+          items: 2,
+      }
+    }
   });
 
   var slider = tns({

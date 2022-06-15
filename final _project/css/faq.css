@@ -77,3 +77,14 @@
         width: auto; }
         .main .container .main_wrap .main_wrap_box .box_faq {
           font-size: 16px; } }
+@media all and (max-width: 492px) {
+  .main .container {
+    padding: 28.5px 0 50px; }
+    .main .container .main_head h2 {
+      margin: 30px 0; }
+    .main .container .main_head img[src*=".png"] {
+      display: none; }
+    .main .container .main_wrap .main_wrap_box .box_faq {
+      font-size: 14px; }
+    .main .container .main_wrap .main_wrap_box .answer {
+      font-size: 14px; } }

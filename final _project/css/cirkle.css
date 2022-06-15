@@ -155,3 +155,19 @@
       display: none; }
     .main .container .sliders.btn_adapt {
       display: none; } }
+@media all and (max-width: 496px) {
+  .main .container {
+    padding: 28.5px 0 55px; }
+    .main .container .title {
+      padding: 15px; }
+      .main .container .title .title_tekst span {
+        margin-bottom: 5px auto;
+        line-height: 165%; }
+    .main .container .main_wrap .about {
+      margin-top: 35px; }
+      .main .container .main_wrap .about h3 {
+        font-size: 16px; }
+      .main .container .main_wrap .about p {
+        line-height: 165%; }
+    .main .container .main_wrap .about_wrap img[src*="2.jpeg"] {
+      margin-top: 20px; } }

@@ -118,6 +118,7 @@
                                 font-weight: 400;
 
                                 & span {
+                                    font-weight: 500;
                                     font-family: 'STIX Two Text';
                                     font-size: $fs36;
                                     line-height: 45px;
@@ -857,9 +858,6 @@
         .container {
             padding: 80px 0;
             position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
 
             & h2, h3, p {
                 display: none;
@@ -870,7 +868,7 @@
                 position: relative;
 
                 .questions {
-                    margin: 0;
+                    margin: 0 auto;
                     width: 439px;
                     padding: 20px;
                     border-radius: 0%;
@@ -892,6 +890,7 @@
 
                 .img_wrap {
                     display: block;
+                    height: 0;
 
                     & img:first-child {
                         height: 125px;
@@ -913,7 +912,7 @@
                 .bonus {
                     border-radius: 0%;
                     width: 439px;
-                    margin: 0;
+                    margin: 0 auto;
 
                     & p{
                         display: inline;
@@ -1022,6 +1021,266 @@
                                 text-align: start;
                             }
                         }   
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width:492px) {
+
+    //section wrap
+
+    .wrap {
+
+        .container {
+            padding: 40px 0 50px;
+    
+            .head_page {
+    
+                .title {
+    
+                    & p {
+                        font-size: $fs;
+                    }
+    
+                    & h1 {
+                        font-size: $fs34;
+                        margin-bottom: 10px;
+                    }
+    
+                    .btn {
+                        margin-top: 15px;
+    
+                        .btn_big {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+    
+            .contant {
+                margin-top: 55px;
+    
+                .inner {
+                    padding: 0;
+    
+                    .about {
+                        margin-bottom: 50px;
+    
+                        .info {
+                            margin-top: 25px;
+                            display: block;
+                            height: auto;
+    
+                            .box {
+                                width: 100%;
+                                height: fit-content;
+                                margin: 7px 0;
+
+    
+                                & p {
+    
+                                    & span {
+                                        font-size: $fs24;
+                                        line-height: 30px;
+                                        margin-right: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .partners {
+    
+                        .partners_logo {
+                            margin-top: 29px;
+                        }
+                    }  
+                }
+            }
+        }
+    }
+
+    // section services
+
+    .services {
+
+        .container {
+            padding: 60px 0 55px;
+
+            & h2 {
+                margin-bottom: 12px;
+            }
+
+            .services_text {
+
+                & p{
+                    width: 100%;
+                }
+            }
+
+            .services_items {
+                margin: 35px auto 25px;
+            }
+
+            .btn_small.btn_adapt {
+                margin-top: 25px;
+            }
+        }
+    }
+
+    // section quiz
+
+    .quiz {
+
+        .container {
+            padding: 60px 0;
+
+            .adapt {
+
+                .questions {
+                    margin: 0 auto;
+                    width: 100%;
+                    padding: 15px;
+    
+                    & h3 {
+                        font-weight: 400;
+                        font-size: $fs20;
+                    }
+                    
+                    & p {
+                        font-weight: 400;
+                        font-size: $fs16;   
+                    }
+    
+                    .questions_wrap {
+    
+                        .questions_items {
+                            margin: 7.5px auto;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .img_wrap {
+
+                    & img:first-child {
+                        height: 105px;
+                        top: -808px;
+                        right: -225px;
+                    }
+
+                    & img:last-child {
+                        height: 105px;
+                        top: -819px;
+                        right: -11px;
+                    }
+                }
+            }
+
+            .quiz_bonus {
+                margin-top: 25px;
+
+                .bonus {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // section case
+
+    .case {
+
+        .container {
+            padding: 70px 0 55px;
+
+            .case_wrap {
+                margin: 35px 0 20px;
+            }
+
+            .btn_small.btn_adapt {
+                margin-top: 25px;
+            }
+        }
+    }
+
+    // section team
+
+    .team {
+
+        .container {
+            padding: 60px 0 40px;
+
+            h2 + p {
+                width: 100%;
+            }
+
+            .team_content {
+                margin: 25px 0 20px;
+
+                .team_item {
+                    width: 100%;
+
+                    & img {
+                        height: 355px;
+                        width: 320px;
+                    }
+
+                    .team_name {
+                        font-size: $fs16;
+
+                        & br {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .forums {
+                margin-top: 30px;
+
+                .forums_title {
+                    display: block;
+                    
+                    & h3 {
+                        font-size: $fs20;
+                        margin-bottom: 16px;
+                    }
+                }
+                
+                .forums_info {
+                    display: block;
+                    padding: 20px 0 31px;
+                    
+
+                    .forums_personal_data {
+                        margin-bottom: 0;
+                        width: 100%;
+
+                        & img {
+                            height: 80px;
+                            width: 80px;
+                            align-self: center;
+                        }
+                    }
+
+                    .forums_meeting_when {
+                        display: block;
+
+                        .forums_meeting {
+                            width: 100%;
+                            margin-bottom: 20px;
+
+                            .forums_meeting_about {
+                                font-size: $fs;
+                            }
+                        }  
+                        
+                        .forums_when {
+                            height: 115px;
+                        }
                     }
                 }
             }

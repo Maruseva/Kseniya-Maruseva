@@ -158,3 +158,26 @@
       margin-top: 21px;
       -ms-flex-item-align: center;
           align-self: center; } }
+@media all and (max-width: 492px) {
+  .main .container {
+    padding: 28px 0 55px; }
+    .main .container .title {
+      padding: 20px 11px; }
+      .main .container .title .title_tekst p {
+        font-size: 14px;
+        line-height: 165%; }
+      .main .container .title .btn_big::after {
+        display: inline; }
+    .main .container .task, .main .container .process, .main .container .service {
+      margin-top: 60px; }
+      .main .container .task .task_wrap, .main .container .task .process_wrap, .main .container .process .task_wrap, .main .container .process .process_wrap, .main .container .service .task_wrap, .main .container .service .process_wrap {
+        margin-top: 8px; }
+        .main .container .task .task_wrap .task_item, .main .container .task .task_wrap .process_item, .main .container .task .process_wrap .task_item, .main .container .task .process_wrap .process_item, .main .container .process .task_wrap .task_item, .main .container .process .task_wrap .process_item, .main .container .process .process_wrap .task_item, .main .container .process .process_wrap .process_item, .main .container .service .task_wrap .task_item, .main .container .service .task_wrap .process_item, .main .container .service .process_wrap .task_item, .main .container .service .process_wrap .process_item {
+          margin-top: 15px; }
+    .main .container .service_wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 11px 0 10px; }
+    .main .container .btn_small.btn_adapt {
+      margin-top: 26px; } }
